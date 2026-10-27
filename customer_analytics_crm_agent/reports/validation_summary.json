@@ -1,0 +1,111 @@
+{
+  "validation_date": "2026-10-27",
+  "core_analytics_demo": {
+    "source_file": "synthetic_customer_transactions.csv",
+    "synthetic": true,
+    "rows": 602,
+    "columns": 12,
+    "exact_duplicate_rows_count": 1,
+    "flagged_outlier_cells": 164,
+    "analysis_outputs": 15,
+    "interpretations": 15,
+    "all_outputs_interpreted": true,
+    "cac_correctly_not_computed": true,
+    "aov_guardrail": "AOV was not calculated because order granularity is ambiguous or repeated order IDs were found in a declared order-level dataset."
+  },
+  "predictive_churn_demo": {
+    "source_file": "synthetic_churn_modeling.csv",
+    "synthetic": true,
+    "customers": 320,
+    "positive_label": "Churn",
+    "holdout_rows": 80,
+    "metrics": [
+      {
+        "Model": "Logistic Regression",
+        "Customers (total)": 320,
+        "Train customers": 240,
+        "Test customers": 80,
+        "Accuracy": 0.575,
+        "Balanced accuracy": 0.6166666666666667,
+        "Precision (positive class)": 0.3333333333333333,
+        "Recall (positive class)": 0.7,
+        "F1 (positive class)": 0.45161290322580644,
+        "ROC AUC": 0.7708333333333333
+      },
+      {
+        "Model": "Random Forest",
+        "Customers (total)": 320,
+        "Train customers": 240,
+        "Test customers": 80,
+        "Accuracy": 0.675,
+        "Balanced accuracy": 0.6,
+        "Precision (positive class)": 0.375,
+        "Recall (positive class)": 0.45,
+        "F1 (positive class)": 0.4090909090909091,
+        "ROC AUC": 0.7208333333333333
+      }
+    ],
+    "note": "Exploratory stratified random holdout; not production-ready."
+  },
+  "crm_knowledge_base": {
+    "platforms": 6,
+    "capability_platform_pairs": 84,
+    "feature_level_verified_records": 16,
+    "not_verified_records": 68,
+    "validation_errors": [],
+    "comparison_rows": 18,
+    "search_results": 29,
+    "sample_gap_class": "Subscription/cost constraint",
+    "sample_gap_confirmed": false
+  },
+  "statistical_test": {
+    "summary": "Pearson correlation between Revenue and Quantity: r=0.515, p=6.822e-42, n=598; moderate positive association; statistically significant at alpha=0.05. Fisher-z 95% confidence interval for r: [0.454, 0.572].",
+    "table": "  Variable X Variable Y  Pearson r  ...  Complete pairs  CI 95% lower  CI 95% upper\n0    Revenue   Quantity   0.515441  ...             598      0.454026      0.571981\n\n[1 rows x 7 columns]",
+    "note": "Correlation measures linear association, not causation. Check scatterplots, influential observations, measurement quality, independence and multiple-testing context before making a decision.",
+    "method": "Pearson correlation",
+    "sample_size": 598,
+    "statistic": 0.5154409695745873,
+    "p_value": 6.822042611455783e-42
+  },
+  "export_validation": {
+    "excel_bytes": 151125,
+    "excel_sheets": [
+      "Original Preview",
+      "Analysis Data",
+      "Missingness & Types",
+      "Outlier Flags",
+      "Outlier Row Audit",
+      "Exact Duplicate Audit",
+      "Cleaning Audit",
+      "Data Dictionary",
+      "Feasibility",
+      "Results Summary",
+      "Interpretations",
+      "R01_Customer Satisfaction (CSAT",
+      "R02_Customer Churn (inactivity ",
+      "R03_Customer Retention",
+      "R04_Average Order Value (AOV)",
+      "R05_Customer Lifetime Value (hi",
+      "R06_Customer Segmentation",
+      "R07_Feedback Sentiment",
+      "R08_Customer Behaviour",
+      "R09_Customer Loyalty (repeat-pu",
+      "R10_Customer Effort Score (CES)",
+      "R11_Net Promoter Score (NPS)",
+      "R12_Price Sensitivity (descript",
+      "R13_RFM Analysis",
+      "R14_Additional_ Descriptive Sta",
+      "R15_Additional_ Channel Perform",
+      "Metadata"
+    ],
+    "html_bytes": 62705,
+    "markdown_bytes": 36479,
+    "model_chart_created": true
+  },
+  "app_runtime": {
+    "streamlit_installed_in_build_environment": false,
+    "browser_ui_runtime_tested": false,
+    "reason": "Streamlit is not preinstalled in this build runtime; dependency installation from the public package index is network-blocked here. The app is syntax-checked; the user can install the declared requirements locally."
+  },
+  "test_command": "PYTHONPATH=src pytest -q"
+}

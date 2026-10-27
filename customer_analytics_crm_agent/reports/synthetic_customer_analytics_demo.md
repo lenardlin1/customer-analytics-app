@@ -1,0 +1,538 @@
+CUSTOMER ANALYTICS INTELLIGENCE REPORT
+============================================
+Source file: synthetic_customer_transactions.csv
+Generated: 2026-10-27 09:08
+Original shape: 602 rows × 12 columns
+Analysis shape after selected cleaning: 602 rows × 12 columns
+
+DATA QUALITY AUDIT
+--------------------
+Exact duplicate rows in original file: 1
+Columns with at least one missing value: 4
+Cleaning actions:
+- Exact duplicate rows were retained; they are reported in the quality audit.
+- Outliers were flagged for review; no numeric values were modified.
+
+OUTLIER SCREEN (IQR RULE; FLAGS ARE NOT PROOF OF ERROR)
+---------------------------------------------
+- Revenue: 53 flagged value(s), bounds [-279.9862, 822.3837]
+- Quantity: 72 flagged value(s), bounds [-0.5, 3.5]
+- Unit_Price: 39 flagged value(s), bounds [-86.5275, 409.6325]
+- NPS_Score: 25 flagged value(s), bounds [1.5, 13.5]
+
+FEASIBILITY ASSESSMENT
+------------------------
+- Customer Satisfaction (CSAT): Calculable (subject to field validation). Required columns appear to be mapped; the app will still validate data types and usable records. Alternative: Run the analysis and report limitations; avoid interpreting association as causation.
+- Customer Churn: Calculable (subject to field validation). Required columns appear to be mapped; the app will still validate data types and usable records. Alternative: Run the analysis and report limitations; avoid interpreting association as causation.
+- Customer Retention: Calculable (subject to field validation). Required columns appear to be mapped; the app will still validate data types and usable records. Alternative: Run the analysis and report limitations; avoid interpreting association as causation.
+- Customer Lifetime Value (CLV): Calculable (subject to field validation). Required columns appear to be mapped; the app will still validate data types and usable records. Alternative: Run the analysis and report limitations; avoid interpreting association as causation.
+- Average Order Value (AOV): Needs clarification. 2 rows are involved in repeated order IDs; these may be duplicate records or line items. Alternative: Review the duplicate-order report and either remove verified exact duplicates or select order-line granularity if appropriate.
+- Customer Journey: Not calculable from current mapping. Needs customer IDs, event/stage labels and event timestamps. Alternative: If there are only purchase records, analyse repeat purchase patterns or RFM rather than claiming to reconstruct a full journey.
+- Customer Segmentation: Calculable (subject to field validation). Required columns appear to be mapped; the app will still validate data types and usable records. Alternative: Run the analysis and report limitations; avoid interpreting association as causation.
+- Feedback Sentiment: Calculable (subject to field validation). Required columns appear to be mapped; the app will still validate data types and usable records. Alternative: Run the analysis and report limitations; avoid interpreting association as causation.
+- Customer Behaviour: Calculable (subject to field validation). Required columns appear to be mapped; the app will still validate data types and usable records. Alternative: Run the analysis and report limitations; avoid interpreting association as causation.
+- Customer Loyalty: Calculable (subject to field validation). Required columns appear to be mapped; the app will still validate data types and usable records. Alternative: Run the analysis and report limitations; avoid interpreting association as causation.
+- Customer Effort Score (CES): Calculable (subject to field validation). Required columns appear to be mapped; the app will still validate data types and usable records. Alternative: Run the analysis and report limitations; avoid interpreting association as causation.
+- Net Promoter Score (NPS): Calculable (subject to field validation). Required columns appear to be mapped; the app will still validate data types and usable records. Alternative: Run the analysis and report limitations; avoid interpreting association as causation.
+- Customer Acquisition Cost (CAC): Not calculable from current mapping. Needs acquisition spend and the count of newly acquired customers for the same period. Alternative: If only spend or only new-customer count exists, report that component and request the missing value; do not invent CAC.
+- CLV:CAC and CAC:CLV ratios: Not calculable from current mapping. Needs a defensible customer-value estimate and CAC for comparable cohorts/periods. Alternative: Report historical revenue per customer and CAC separately; mark any ratio as a proxy rather than predictive unit economics.
+- First Contact Resolution (FCR): Not calculable from current mapping. Needs a first-contact-resolution flag or sufficient interaction history to derive it reliably. Alternative: Report ticket resolution rate or response/resolution time if available; these are not FCR.
+- Average Ticket / Response Time: Not calculable from current mapping. Needs ticket creation and resolution timestamps, or creation and first-response timestamps/durations. Alternative: Report whichever timestamps exist; otherwise request the appropriate service timestamps.
+- Price Sensitivity: Calculable (subject to field validation). Required columns appear to be mapped; the app will still validate data types and usable records. Alternative: Run the analysis and report limitations; avoid interpreting association as causation.
+- RFM Analysis: Calculable (subject to field validation). Required columns appear to be mapped; the app will still validate data types and usable records. Alternative: Run the analysis and report limitations; avoid interpreting association as causation.
+
+RESULTS
+-------
+
+Customer Satisfaction (CSAT)
+Mean satisfaction score: 3.72 (n=587). Share at or above the configured threshold (4): 66.1%.
+Limitations: The satisfied threshold is configurable; verify it matches your survey scale and organisation's definition.
+
+Customer Churn (inactivity proxy)
+82.1% of observed customers have no recorded activity in the last 90 days before 2026-10-10 (115/140). This is an inactivity proxy, not confirmed churn.
+Limitations: A dataset's last date is not necessarily the true business snapshot date. Validate the cutoff and inactivity window before interpreting churn.
+
+Customer Retention
+Cohort retention matrix generated for 28 acquisition cohorts. Month 0 is 100% by construction.
+Limitations: Retention is based on customers with recorded activity in each calendar month. Interpret carefully if event data are incomplete or the business is not expected to have monthly repeat activity.
+
+Average Order Value (AOV)
+AOV was not calculated because order granularity is ambiguous or repeated order IDs were found in a declared order-level dataset.
+Limitations: 1 distinct order ID(s) have repeated rows. Confirm whether these are legitimate order lines, duplicate transactions or repeated order totals before calculating AOV.
+
+Customer Lifetime Value (historical proxy)
+Observed revenue per customer over the file's covered period: mean 1,515.91, median 1,371.08; 140 customers. This is historical observed value, not predictive lifetime value.
+Limitations: Currency and period come from the source data. Refunds/negative amounts are retained; determine whether the measure should be net revenue or contribution margin before using it as CLV.
+
+Customer Segmentation
+Created 3 exploratory clusters from 6 numeric feature(s) and 140 customer/row records.
+Limitations: Clusters are exploratory and depend on selected numeric features. Validate business meaning and stability before operationalising. Missing feature values were median-imputed for clustering only; raw data remain unchanged unless the separate cleaning options were applied.
+
+Feedback Sentiment
+Analysed 547 text responses using simple keyword fallback. Results: {'Positive': 375, 'Neutral / mixed': 136, 'Negative': 36}.
+Limitations: Lexicon sentiment is a rough screening aid, not an understanding of sarcasm, context, language variation or all languages. Human review is recommended for high-impact actions.
+
+Customer Behaviour
+Built a customer-level summary for 140 customer IDs using the mapped fields.
+Limitations: A row is treated as a transaction/activity record. Confirm the granularity of the source file; repeated snapshots can make record counts misleading.
+
+Customer Loyalty (repeat-purchase proxy)
+82.9% of customers have at least two records in this dataset; median records/customer: 4.0.
+Limitations: Repeat purchase is a loyalty proxy, not a complete loyalty measure. If one customer can have multiple rows per order, map an order ID or deduplicate at the correct transaction grain.
+
+Customer Effort Score (CES)
+Mean CES score: 3.57 (n=590); median 4.00; direction configured as 'Higher score = more effort'.
+Limitations: CES scales differ; verify scale direction and response coding before comparing teams or periods.
+
+Net Promoter Score (NPS)
+NPS: 13.5 (valid 0–10 responses n=602). Promoters 38.9%, passives 35.7%, detractors 25.4%.
+Limitations: NPS is percentage of promoters minus percentage of detractors, not the average of the 0–10 responses. Scores outside 0–10 were excluded and should be investigated.
+
+Price Sensitivity (descriptive)
+Observed price/quantity Pearson correlation: -0.015 across 602 records.
+Limitations: A simple correlation is not causal price elasticity. Product mix, promotion, seasonality, stock availability and customer selection can confound the relationship. Price-sensitivity estimation needs meaningful price variation and controls or a designed experiment.
+
+RFM Analysis
+RFM scored 140 customers using snapshot date 2026-10-10; frequency uses distinct order IDs where mapped, otherwise row count as transaction proxy.
+Limitations: Scores are relative to this dataset and are not directly comparable across periods without a consistent scoring strategy. Monetary sums retain negative values such as refunds.
+
+Additional: Descriptive Statistics
+Generated descriptive statistics for 6 numeric columns.
+Limitations: Inspect units, missingness and unusual values before interpreting distributions.
+
+Additional: Channel Performance
+Compared 5 channels on recorded amount.
+Limitations: Recorded sales/revenue by channel is not marketing ROI unless acquisition spend and attribution are also available.
+
+IMPORTANT INTERPRETATION RULES
+-----------------------------
+1. Historical revenue/customer is not the same as predictive CLV.
+2. Inactivity is a churn-risk proxy unless an explicit churn outcome is available.
+3. Correlation does not establish causality; price sensitivity requires suitable variation and controls or an experiment.
+4. Outliers are flagged, not automatically treated as errors. Review the audit and compare results before/after any alteration.
+5. Analyses are conditional on the correctness, representativeness and granularity of the uploaded data.
+
+# Automatic Interpretation and Business Decision Intelligence
+
+Interpretations are generated from the computed result objects. Recommendations are proposals, not measured outcomes.
+
+## Customer Satisfaction (CSAT)
+
+### Analysis overview
+This section evaluates customer satisfaction (csat) using the mapped fields and available records.
+
+### Key findings
+- The analysis was run on an analysis dataset containing 602 row(s); the metric-specific usable denominator may be smaller because of missing or invalid values.
+- Mean satisfaction score: 3.72 (n=587). Share at or above the configured threshold (4): 66.1%.
+- Computed table ranges: Score: min 1, max 5 across 5 usable value(s); Responses: min 33, max 229 across 5 usable value(s).
+
+### Business implications
+Satisfaction scores summarize reported customer experience; the distribution matters because an average can conceal dissatisfied subgroups. The threshold is meaningful only if it matches the survey scale and internal definition.
+
+### Root-cause assessment
+The output is descriptive unless the method explicitly reports a validated inferential or predictive result. Any proposed explanation of why the pattern occurred is a hypothesis to investigate, not a proven cause.
+
+### Recommended actions
+- Inspect low-score responses and segment them by channel, product, customer type or journey stage when those fields exist.
+- Review recurring complaints and test one targeted service improvement before scaling it.
+
+### KPIs to monitor
+- CSAT mean and distribution
+- Share below the defined satisfaction threshold
+- Repeat-contact or complaint rate, if available
+
+### Limitations and confidence notes
+- Survey scores may be ordinal; averages should be supplemented with distributions and subgroup counts.
+- The satisfied threshold is configurable; verify it matches your survey scale and organisation's definition.
+
+## Customer Churn (inactivity proxy)
+
+### Analysis overview
+This section evaluates customer churn (inactivity proxy) using the mapped fields and available records.
+
+### Key findings
+- The analysis was run on an analysis dataset containing 602 row(s); the metric-specific usable denominator may be smaller because of missing or invalid values.
+- 82.1% of observed customers have no recorded activity in the last 90 days before 2026-10-10 (115/140). This is an inactivity proxy, not confirmed churn.
+- Computed table ranges: Days inactive: min 113, max 915 across 100 usable value(s); Flagged inactive: min 1, max 1 across 100 usable value(s).
+
+### Business implications
+A churn rate is meaningful only for a clearly defined eligible population and observation window. If the result is an inactivity proxy, it identifies customers who crossed a recency rule, not confirmed churn or a calibrated probability of leaving.
+
+### Root-cause assessment
+The output is descriptive unless the method explicitly reports a validated inferential or predictive result. Any proposed explanation of why the pattern occurred is a hypothesis to investigate, not a proven cause.
+
+### Recommended actions
+- Validate the churn definition, observation window and eligible denominator before comparing rates.
+- Prioritize outreach tests for high-value inactive customers if customer value and contact-permission data are available.
+
+### KPIs to monitor
+- Confirmed churn rate with fixed denominator
+- Reactivation rate
+- Retention by cohort/segment
+- Incremental contribution after intervention, if measurable
+
+### Limitations and confidence notes
+- Inactivity thresholds are proxies unless confirmed churn labels and a defensible observation window exist.
+- A dataset's last date is not necessarily the true business snapshot date. Validate the cutoff and inactivity window before interpreting churn.
+
+## Customer Retention
+
+### Analysis overview
+This section evaluates customer retention using the mapped fields and available records.
+
+### Key findings
+- The analysis was run on an analysis dataset containing 602 row(s); the metric-specific usable denominator may be smaller because of missing or invalid values.
+- Cohort retention matrix generated for 28 acquisition cohorts. Month 0 is 100% by construction.
+- Computed table ranges: Month 0: min 100, max 100 across 28 usable value(s); Month 1: min 0, max 100 across 28 usable value(s); Month 2: min 0, max 100 across 28 usable value(s); Month 3: min 0, max 100 across 28 usable value(s).
+
+### Business implications
+Cohort comparisons show how observed activity changes over time from each cohort's starting period. Compare like-for-like cohort ages; newer cohorts have less follow-up history.
+
+### Root-cause assessment
+The output is descriptive unless the method explicitly reports a validated inferential or predictive result. Any proposed explanation of why the pattern occurred is a hypothesis to investigate, not a proven cause.
+
+### Recommended actions
+- Compare cohorts at the same age and locate the first period with a material drop.
+- Design a lifecycle intervention just before the observed drop-off and compare against a holdout where feasible.
+
+### KPIs to monitor
+- Retention at fixed cohort ages
+- Repeat purchase rate
+- Incremental lift versus holdout
+
+### Limitations and confidence notes
+- Purchase activity is not subscription retention; incomplete follow-up can make recent cohorts appear different.
+- Retention is based on customers with recorded activity in each calendar month. Interpret carefully if event data are incomplete or the business is not expected to have monthly repeat activity.
+
+## Average Order Value (AOV)
+
+### Analysis overview
+This section evaluates average order value (aov) using the mapped fields and available records.
+
+### Key findings
+- The analysis was run on an analysis dataset containing 602 row(s); the metric-specific usable denominator may be smaller because of missing or invalid values.
+- AOV was not calculated because order granularity is ambiguous or repeated order IDs were found in a declared order-level dataset.
+- Computed table ranges: Rows per order: min 2, max 2 across 1 usable value(s).
+
+### Business implications
+The result describes the uploaded data and the selected definitions. Business impact should be quantified only when suitable financial, population and time-period data are available.
+
+### Root-cause assessment
+The output is descriptive unless the method explicitly reports a validated inferential or predictive result. Any proposed explanation of why the pattern occurred is a hypothesis to investigate, not a proven cause.
+
+### Recommended actions
+- Review the underlying table and confirm that the mapped fields, population, time period and business definitions match the intended question.
+
+### KPIs to monitor
+- Track the same metric over a comparable future period and segment, using a consistent definition.
+
+### Limitations and confidence notes
+- 1 distinct order ID(s) have repeated rows. Confirm whether these are legitimate order lines, duplicate transactions or repeated order totals before calculating AOV.
+
+## Customer Lifetime Value (historical proxy)
+
+### Analysis overview
+This section evaluates customer lifetime value (historical proxy) using the mapped fields and available records.
+
+### Key findings
+- The analysis was run on an analysis dataset containing 602 row(s); the metric-specific usable denominator may be smaller because of missing or invalid values.
+- Observed revenue per customer over the file's covered period: mean 1,515.91, median 1,371.08; 140 customers. This is historical observed value, not predictive lifetime value.
+- Computed table ranges: Observed revenue: min 759, max 5.09e+03 across 100 usable value(s).
+
+### Business implications
+The result describes the uploaded data and the selected definitions. Business impact should be quantified only when suitable financial, population and time-period data are available.
+
+### Root-cause assessment
+The output is descriptive unless the method explicitly reports a validated inferential or predictive result. Any proposed explanation of why the pattern occurred is a hypothesis to investigate, not a proven cause.
+
+### Recommended actions
+- Review the underlying table and confirm that the mapped fields, population, time period and business definitions match the intended question.
+
+### KPIs to monitor
+- Track the same metric over a comparable future period and segment, using a consistent definition.
+
+### Limitations and confidence notes
+- Currency and period come from the source data. Refunds/negative amounts are retained; determine whether the measure should be net revenue or contribution margin before using it as CLV.
+
+## Customer Segmentation
+
+### Analysis overview
+This section evaluates customer segmentation using the mapped fields and available records.
+
+### Key findings
+- The analysis was run on an analysis dataset containing 602 row(s); the metric-specific usable denominator may be smaller because of missing or invalid values.
+- Created 3 exploratory clusters from 6 numeric feature(s) and 140 customer/row records.
+- Computed table ranges: Records / customers: min 1, max 87 across 140 usable value(s); Revenue: min 266, max 2.6e+03 across 140 usable value(s); Quantity: min 1, max 2.35 across 140 usable value(s); Unit_Price: min 171, max 2.6e+03 across 140 usable value(s).
+
+### Business implications
+Segments or clusters summarize similarity in the selected features. Their commercial meaning depends on feature scaling, cluster stability and whether the groups differ on outcomes not used to create them.
+
+### Root-cause assessment
+The output is descriptive unless the method explicitly reports a validated inferential or predictive result. Any proposed explanation of why the pattern occurred is a hypothesis to investigate, not a proven cause.
+
+### Recommended actions
+- Profile each segment with interpretable feature summaries and customer counts.
+- Pilot segment-specific treatments and evaluate incremental outcomes rather than assuming labels imply needs.
+
+### KPIs to monitor
+- Segment size
+- Revenue/contribution per customer where available
+- Engagement and retention by segment
+- Incremental campaign lift
+
+### Limitations and confidence notes
+- Exploratory clusters can be sensitive to scaling, feature selection, random initialization and chosen cluster count.
+- Clusters are exploratory and depend on selected numeric features. Validate business meaning and stability before operationalising. Missing feature values were median-imputed for clustering only; raw data remain unchanged unless the separate cleaning options were applied.
+
+## Feedback Sentiment
+
+### Analysis overview
+This section evaluates feedback sentiment using the mapped fields and available records.
+
+### Key findings
+- The analysis was run on an analysis dataset containing 602 row(s); the metric-specific usable denominator may be smaller because of missing or invalid values.
+- Analysed 547 text responses using simple keyword fallback. Results: {'Positive': 375, 'Neutral / mixed': 136, 'Negative': 36}.
+- Computed table ranges: Sentiment score: min -1, max 1 across 250 usable value(s).
+
+### Business implications
+Automated sentiment or theme labels are screening signals. They should be checked against a sample of original comments, especially for sarcasm, mixed sentiment, language differences and domain-specific wording.
+
+### Root-cause assessment
+The output is descriptive unless the method explicitly reports a validated inferential or predictive result. Any proposed explanation of why the pattern occurred is a hypothesis to investigate, not a proven cause.
+
+### Recommended actions
+- Manually review a stratified sample of positive, negative and uncertain comments.
+- Group recurring negative themes by product/channel and assign an operational owner for investigation.
+
+### KPIs to monitor
+- Validated sentiment precision on reviewed sample
+- Complaint theme frequency
+- Resolution time and repeat complaint rate
+
+### Limitations and confidence notes
+- Model/lexicon sentiment is not a verified customer opinion until validated; text samples may not represent all customers.
+- Lexicon sentiment is a rough screening aid, not an understanding of sarcasm, context, language variation or all languages. Human review is recommended for high-impact actions.
+
+## Customer Behaviour
+
+### Analysis overview
+This section evaluates customer behaviour using the mapped fields and available records.
+
+### Key findings
+- The analysis was run on an analysis dataset containing 602 row(s); the metric-specific usable denominator may be smaller because of missing or invalid values.
+- Built a customer-level summary for 140 customer IDs using the mapped fields.
+- Computed table ranges: records: min 1, max 8 across 140 usable value(s); total_observed_amount: min 31.1, max 5.09e+03 across 140 usable value(s); average_record_amount: min 31.1, max 2.6e+03 across 140 usable value(s); distinct_event_types: min 1, max 1 across 140 usable value(s).
+
+### Business implications
+Repeat purchases and observed engagement describe behaviour; they do not independently prove attitudinal loyalty. Consider customer tenure, purchase opportunity and category buying cycles.
+
+### Root-cause assessment
+The output is descriptive unless the method explicitly reports a validated inferential or predictive result. Any proposed explanation of why the pattern occurred is a hypothesis to investigate, not a proven cause.
+
+### Recommended actions
+- Compare repeat behaviour across comparable tenure and acquisition cohorts.
+- Test relevant cross-sell or replenishment messages only where product and consent data support them.
+
+### KPIs to monitor
+- Repeat purchase rate
+- Time to next purchase
+- Cross-sell conversion
+- Contribution per customer
+
+### Limitations and confidence notes
+- Behavioural proxies can be affected by tenure, purchase frequency and observation-window differences.
+- A row is treated as a transaction/activity record. Confirm the granularity of the source file; repeated snapshots can make record counts misleading.
+
+## Customer Loyalty (repeat-purchase proxy)
+
+### Analysis overview
+This section evaluates customer loyalty (repeat-purchase proxy) using the mapped fields and available records.
+
+### Key findings
+- The analysis was run on an analysis dataset containing 602 row(s); the metric-specific usable denominator may be smaller because of missing or invalid values.
+- 82.9% of customers have at least two records in this dataset; median records/customer: 4.0.
+- Computed table ranges: Recorded transactions per customer: min 1, max 8 across 8 usable value(s); Customers: min 12, max 24 across 8 usable value(s).
+
+### Business implications
+Repeat purchases and observed engagement describe behaviour; they do not independently prove attitudinal loyalty. Consider customer tenure, purchase opportunity and category buying cycles.
+
+### Root-cause assessment
+The output is descriptive unless the method explicitly reports a validated inferential or predictive result. Any proposed explanation of why the pattern occurred is a hypothesis to investigate, not a proven cause.
+
+### Recommended actions
+- Compare repeat behaviour across comparable tenure and acquisition cohorts.
+- Test relevant cross-sell or replenishment messages only where product and consent data support them.
+
+### KPIs to monitor
+- Repeat purchase rate
+- Time to next purchase
+- Cross-sell conversion
+- Contribution per customer
+
+### Limitations and confidence notes
+- Behavioural proxies can be affected by tenure, purchase frequency and observation-window differences.
+- Repeat purchase is a loyalty proxy, not a complete loyalty measure. If one customer can have multiple rows per order, map an order ID or deduplicate at the correct transaction grain.
+
+## Customer Effort Score (CES)
+
+### Analysis overview
+This section evaluates customer effort score (ces) using the mapped fields and available records.
+
+### Key findings
+- The analysis was run on an analysis dataset containing 602 row(s); the metric-specific usable denominator may be smaller because of missing or invalid values.
+- Mean CES score: 3.57 (n=590); median 4.00; direction configured as 'Higher score = more effort'.
+- Computed table ranges: Score: min 1, max 5 across 5 usable value(s); Responses: min 36, max 169 across 5 usable value(s).
+
+### Business implications
+The result describes the uploaded data and the selected definitions. Business impact should be quantified only when suitable financial, population and time-period data are available.
+
+### Root-cause assessment
+The output is descriptive unless the method explicitly reports a validated inferential or predictive result. Any proposed explanation of why the pattern occurred is a hypothesis to investigate, not a proven cause.
+
+### Recommended actions
+- Review the underlying table and confirm that the mapped fields, population, time period and business definitions match the intended question.
+
+### KPIs to monitor
+- Track the same metric over a comparable future period and segment, using a consistent definition.
+
+### Limitations and confidence notes
+- CES scales differ; verify scale direction and response coding before comparing teams or periods.
+
+## Net Promoter Score (NPS)
+
+### Analysis overview
+This section evaluates net promoter score (nps) using the mapped fields and available records.
+
+### Key findings
+- The analysis was run on an analysis dataset containing 602 row(s); the metric-specific usable denominator may be smaller because of missing or invalid values.
+- NPS: 13.5 (valid 0–10 responses n=602). Promoters 38.9%, passives 35.7%, detractors 25.4%.
+- Computed table ranges: Count: min 153, max 234 across 3 usable value(s); Percent: min 25.4, max 38.9 across 3 usable value(s).
+
+### Business implications
+NPS summarizes promoter share minus detractor share on the 0–10 recommendation scale. It is a perception indicator, not proof of future growth or actual referral behaviour.
+
+### Root-cause assessment
+The output is descriptive unless the method explicitly reports a validated inferential or predictive result. Any proposed explanation of why the pattern occurred is a hypothesis to investigate, not a proven cause.
+
+### Recommended actions
+- Review detractor feedback and compare response rates and NPS across relevant customer groups.
+- Close the loop on recurring issues and measure whether subsequent survey responses and behaviour improve.
+
+### KPIs to monitor
+- NPS
+- Promoter/passive/detractor proportions
+- Survey response rate
+- Repeat purchase/referral behaviour if linked
+
+### Limitations and confidence notes
+- NPS is sensitive to sampling, response bias and survey timing; do not interpret it alone as a growth forecast.
+- NPS is percentage of promoters minus percentage of detractors, not the average of the 0–10 responses. Scores outside 0–10 were excluded and should be investigated.
+
+## Price Sensitivity (descriptive)
+
+### Analysis overview
+This section evaluates price sensitivity (descriptive) using the mapped fields and available records.
+
+### Key findings
+- The analysis was run on an analysis dataset containing 602 row(s); the metric-specific usable denominator may be smaller because of missing or invalid values.
+- Observed price/quantity Pearson correlation: -0.015 across 602 records.
+- Computed table ranges: price: min 20.9, max 3.25e+03 across 595 usable value(s); records: min 1, max 2 across 595 usable value(s); total_quantity: min 1, max 6 across 595 usable value(s); mean_quantity: min 1, max 5 across 595 usable value(s).
+
+### Business implications
+Descriptive price and quantity patterns can identify associations, but they do not establish price elasticity when promotions, seasonality, product mix and customer selection are uncontrolled.
+
+### Root-cause assessment
+The output is descriptive unless the method explicitly reports a validated inferential or predictive result. Any proposed explanation of why the pattern occurred is a hypothesis to investigate, not a proven cause.
+
+### Recommended actions
+- Use a controlled price test or an appropriate causal design before changing prices based on this association.
+- Control for product, channel, promotion and time effects where data permits.
+
+### KPIs to monitor
+- Units and conversion by tested price
+- Contribution profit
+- Refund/return rate
+- Experiment confidence interval
+
+### Limitations and confidence notes
+- Ordinary transaction correlation is not a causal estimate of price elasticity.
+- A simple correlation is not causal price elasticity. Product mix, promotion, seasonality, stock availability and customer selection can confound the relationship. Price-sensitivity estimation needs meaningful price variation and controls or a designed experiment.
+
+## RFM Analysis
+
+### Analysis overview
+This section evaluates rfm analysis using the mapped fields and available records.
+
+### Key findings
+- The analysis was run on an analysis dataset containing 602 row(s); the metric-specific usable denominator may be smaller because of missing or invalid values.
+- RFM scored 140 customers using snapshot date 2026-10-10; frequency uses distinct order IDs where mapped, otherwise row count as transaction proxy.
+- Computed table ranges: Recency days: min 0, max 915 across 140 usable value(s); Frequency orders/records: min 1, max 8 across 140 usable value(s); Monetary observed amount: min 31.1, max 5.09e+03 across 140 usable value(s); R score: min 1, max 5 across 140 usable value(s).
+
+### Business implications
+RFM-style groupings summarize recent purchasing, purchase frequency and monetary value. Segment labels depend on scoring rules and should be validated against actual future behaviour before they drive campaigns.
+
+### Root-cause assessment
+The output is descriptive unless the method explicitly reports a validated inferential or predictive result. Any proposed explanation of why the pattern occurred is a hypothesis to investigate, not a proven cause.
+
+### Recommended actions
+- Check segment sizes and value contribution, then target a small campaign matched to each segment's observed behaviour.
+- Use a holdout group to evaluate incremental repeat purchases or contribution.
+
+### KPIs to monitor
+- Segment size and revenue/contribution share
+- Repeat-purchase rate by segment
+- Campaign incremental lift
+
+### Limitations and confidence notes
+- RFM is a descriptive segmentation, not a causal explanation or a guarantee of future value.
+- Scores are relative to this dataset and are not directly comparable across periods without a consistent scoring strategy. Monetary sums retain negative values such as refunds.
+
+## Additional: Descriptive Statistics
+
+### Analysis overview
+This section evaluates additional: descriptive statistics using the mapped fields and available records.
+
+### Key findings
+- The analysis was run on an analysis dataset containing 602 row(s); the metric-specific usable denominator may be smaller because of missing or invalid values.
+- Generated descriptive statistics for 6 numeric columns.
+- Computed table ranges: count: min 587, max 602 across 6 usable value(s); mean: min 1.87, max 355 across 6 usable value(s); std: min 1.13, max 399 across 6 usable value(s); min: min 0, max 20.9 across 6 usable value(s).
+
+### Business implications
+The result describes the uploaded data and the selected definitions. Business impact should be quantified only when suitable financial, population and time-period data are available.
+
+### Root-cause assessment
+The output is descriptive unless the method explicitly reports a validated inferential or predictive result. Any proposed explanation of why the pattern occurred is a hypothesis to investigate, not a proven cause.
+
+### Recommended actions
+- Review the underlying table and confirm that the mapped fields, population, time period and business definitions match the intended question.
+
+### KPIs to monitor
+- Track the same metric over a comparable future period and segment, using a consistent definition.
+
+### Limitations and confidence notes
+- Inspect units, missingness and unusual values before interpreting distributions.
+
+## Additional: Channel Performance
+
+### Analysis overview
+This section evaluates additional: channel performance using the mapped fields and available records.
+
+### Key findings
+- The analysis was run on an analysis dataset containing 602 row(s); the metric-specific usable denominator may be smaller because of missing or invalid values.
+- Compared 5 channels on recorded amount.
+- Computed table ranges: records: min 83, max 162 across 5 usable value(s); total_amount: min 2.71e+04, max 6.18e+04 across 5 usable value(s); average_amount: min 326, max 381 across 5 usable value(s).
+
+### Business implications
+The result describes the uploaded data and the selected definitions. Business impact should be quantified only when suitable financial, population and time-period data are available.
+
+### Root-cause assessment
+The output is descriptive unless the method explicitly reports a validated inferential or predictive result. Any proposed explanation of why the pattern occurred is a hypothesis to investigate, not a proven cause.
+
+### Recommended actions
+- Review the underlying table and confirm that the mapped fields, population, time period and business definitions match the intended question.
+
+### KPIs to monitor
+- Track the same metric over a comparable future period and segment, using a consistent definition.
+
+### Limitations and confidence notes
+- Recorded sales/revenue by channel is not marketing ROI unless acquisition spend and attribution are also available.

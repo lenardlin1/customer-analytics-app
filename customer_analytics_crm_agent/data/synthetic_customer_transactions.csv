@@ -1,0 +1,603 @@
+Customer_ID,Order_ID,Transaction_Date,Revenue,Quantity,Unit_Price,Product,Channel,CSAT_Score,CES_Score,NPS_Score,Feedback_Text
+C0001,O0001-01,2025-08-17,37.88,1,37.88,Lighting,Retail,3.0,2.0,8,Easy ordering experience
+C0001,O0001-02,2025-08-25,218.06,1,218.06,Lighting,Retail,5.0,5.0,5,Fast delivery and helpful support
+C0001,O0001-03,2026-01-04,170.08,2,85.04,Lighting,Retail,4.0,3.0,5,Would recommend to friends
+C0001,O0001-04,2026-02-24,85.43,1,85.43,Lighting,Retail,5.0,3.0,9,Very happy with the purchase
+C0001,O0001-05,2026-06-08,111.68,1,111.68,Lighting,Retail,4.0,4.0,10,Support response was slow
+C0001,O0001-06,2026-06-20,344.55,5,68.91,Lighting,Retail,4.0,3.0,9,Very happy with the purchase
+C0002,O0002-01,2026-03-29,54.9,1,54.9,Storage,Retail,5.0,5.0,2,Support response was slow
+C0002,O0002-02,2026-06-16,547.83,1,547.83,Storage,Retail,1.0,5.0,9,Easy ordering experience
+C0003,O0003-01,2025-03-19,160.2,2,80.1,Gift Set,Online,4.0,2.0,8,Support response was slow
+C0003,O0003-02,2025-10-20,115.0,1,115.0,Gift Set,Online,4.0,5.0,10,Fast delivery and helpful support
+C0003,O0003-03,2025-11-10,1284.6,5,256.92,Gift Set,Online,5.0,4.0,7,Would recommend to friends
+C0003,O0003-04,2026-04-28,154.12,2,77.06,Gift Set,Online,3.0,5.0,4,Very happy with the purchase
+C0003,O0003-05,2026-07-20,132.97,1,132.97,Gift Set,Online,3.0,3.0,7,Fast delivery and helpful support
+C0003,O0003-06,2026-10-01,515.02,1,515.02,Gift Set,Online,4.0,4.0,10,
+C0004,O0004-01,2025-03-01,469.68,4,117.42,Kitchenware,Email,5.0,4.0,10,Fast delivery and helpful support
+C0004,O0004-02,2025-11-26,111.95,1,111.95,Kitchenware,Email,3.0,4.0,7,
+C0004,O0004-03,2026-03-31,341.29,1,341.29,Kitchenware,Email,3.0,5.0,8,Fast delivery and helpful support
+C0004,O0004-04,2026-06-14,114.14,2,57.07,Kitchenware,Email,4.0,,9,Very happy with the purchase
+C0004,O0004-05,2026-06-22,174.99,1,174.99,Kitchenware,Email,5.0,4.0,9,Product quality could be better
+C0004,O0004-06,2026-07-07,168.26,2,84.13,Kitchenware,Email,4.0,4.0,10,Good packaging and quality
+C0004,O0004-07,2026-07-17,241.95,1,241.95,Kitchenware,Email,3.0,3.0,7,
+C0005,O0005-01,2025-04-09,1920.24,2,960.1200000000001,Storage,Online,,5.0,2,Would recommend to friends
+C0005,O0005-02,2025-04-27,436.14,2,218.07,Storage,Online,2.0,4.0,10,
+C0006,O0006-01,2024-09-23,79.43,1,79.43,Storage,Retail,2.0,5.0,5,Price was high for the value
+C0006,O0006-02,2024-11-18,275.8,2,137.9,Storage,Retail,1.0,1.0,0,Easy ordering experience
+C0007,O0007-01,2025-10-28,896.66,2,448.33,Storage,Paid Search,1.0,4.0,0,Would recommend to friends
+C0008,O0008-01,2025-06-06,414.04,2,207.02,Home Decor,Retail,5.0,4.0,7,Easy ordering experience
+C0009,O0009-01,2024-06-23,801.1,5,160.22,Home Decor,Paid Search,4.0,5.0,8,Delivery took too long
+C0009,O0009-02,2024-06-26,674.24,1,674.24,Home Decor,Paid Search,5.0,4.0,9,Would recommend to friends
+C0009,O0009-03,2025-05-24,388.84,2,194.42,Home Decor,Paid Search,4.0,3.0,6,Delivery took too long
+C0009,O0009-04,2025-10-22,162.2,1,162.2,Home Decor,Paid Search,4.0,4.0,10,Would recommend to friends
+C0009,O0009-05,2026-06-05,35.24,1,35.24,Home Decor,Paid Search,4.0,5.0,1,Good packaging and quality
+C0010,O0010-01,2025-12-16,1354.18,2,677.09,Home Decor,Email,5.0,4.0,9,Fast delivery and helpful support
+C0011,O0011-01,2025-07-08,556.98,3,185.66,Glassware,Email,3.0,5.0,9,Very happy with the purchase
+C0011,O0011-02,2025-12-20,361.84,4,90.46,Glassware,Email,2.0,5.0,8,Good packaging and quality
+C0011,O0011-03,2026-09-29,180.05,1,180.05,Glassware,Email,4.0,5.0,9,Price was high for the value
+C0012,O0012-01,2024-04-17,85.29,1,85.29,Storage,Email,5.0,3.0,9,Easy ordering experience
+C0012,O0012-02,2024-06-23,227.26,2,113.63,Storage,Email,4.0,3.0,9,Fast delivery and helpful support
+C0012,O0012-03,2024-11-24,548.07,3,182.69,Storage,Email,4.0,2.0,10,Good packaging and quality
+C0012,O0012-04,2025-01-03,241.9,2,120.95,Storage,Email,4.0,,8,Fast delivery and helpful support
+C0012,O0012-05,2025-01-14,130.3,1,130.3,Storage,Email,4.0,3.0,7,Very happy with the purchase
+C0012,O0012-06,2026-01-07,203.4,1,203.4,Storage,Email,,5.0,9,Would recommend to friends
+C0012,O0012-07,2026-05-26,223.67,1,223.67,Storage,Email,5.0,2.0,10,Would recommend to friends
+C0012,O0012-08,2026-07-22,66.77,1,66.77,Storage,Email,5.0,2.0,10,Product quality could be better
+C0013,O0013-01,2024-05-18,143.32,1,143.32,Glassware,Email,5.0,3.0,8,Easy ordering experience
+C0013,O0013-02,2025-04-15,677.08,4,169.27,Glassware,Email,4.0,2.0,10,Would recommend to friends
+C0013,O0013-03,2025-04-29,795.28,4,198.82,Glassware,Email,4.0,4.0,9,
+C0013,O0013-04,2026-01-04,616.6,2,308.3,Glassware,Email,5.0,3.0,10,Easy ordering experience
+C0013,O0013-05,2026-03-23,90.39,1,90.39,Glassware,Email,5.0,5.0,9,Support response was slow
+C0013,O0013-06,2026-08-28,139.99,1,139.99,Glassware,Email,5.0,3.0,7,Good packaging and quality
+C0014,O0014-01,2024-09-19,144.58,1,144.58,Kitchenware,Paid Search,2.0,3.0,9,Fast delivery and helpful support
+C0014,O0014-02,2025-04-30,152.2,1,152.2,Kitchenware,Paid Search,3.0,5.0,10,Very happy with the purchase
+C0014,O0014-03,2025-09-19,186.28,2,93.14,Kitchenware,Paid Search,4.0,5.0,8,Would recommend to friends
+C0014,O0014-04,2025-10-02,276.12,3,92.04,Kitchenware,Paid Search,4.0,2.0,2,
+C0015,O0015-01,2025-02-21,535.2,3,178.4,Lighting,Online,5.0,4.0,1,Would recommend to friends
+C0015,O0015-02,2025-04-22,857.48,2,428.74,Lighting,Online,4.0,5.0,8,Easy ordering experience
+C0015,O0015-03,2025-06-18,316.32,2,158.16,Lighting,Online,2.0,5.0,8,Easy ordering experience
+C0015,O0015-04,2025-08-02,493.96,2,246.98,Lighting,Online,5.0,5.0,7,Delivery took too long
+C0015,O0015-05,2025-09-13,244.9,5,48.98,Lighting,Online,4.0,3.0,9,Fast delivery and helpful support
+C0015,O0015-06,2025-09-23,199.22,1,199.22,Lighting,Online,3.0,5.0,8,Product quality could be better
+C0015,O0015-07,2026-01-07,230.73,1,230.73,Lighting,Online,1.0,4.0,10,Would recommend to friends
+C0016,O0016-01,2025-02-19,113.5,1,113.5,Kitchenware,Retail,4.0,4.0,10,Easy ordering experience
+C0016,O0016-02,2025-05-28,389.12,2,194.56,Kitchenware,Retail,3.0,3.0,6,Price was high for the value
+C0016,O0016-03,2025-06-16,316.42,2,158.21,Kitchenware,Retail,4.0,4.0,10,Support response was slow
+C0016,O0016-04,2025-09-05,102.36,1,102.36,Kitchenware,Retail,2.0,3.0,10,Easy ordering experience
+C0016,O0016-05,2025-12-17,222.16,2,111.08,Kitchenware,Retail,2.0,5.0,2,
+C0016,O0016-06,2026-03-25,462.3,2,231.15,Kitchenware,Retail,5.0,4.0,7,Would recommend to friends
+C0017,O0017-01,2025-07-19,182.72,1,182.72,Gift Set,Retail,1.0,4.0,4,
+C0017,O0017-02,2025-07-23,441.51,3,147.17,Gift Set,Retail,4.0,5.0,10,Fast delivery and helpful support
+C0017,O0017-03,2025-10-17,181.41,1,181.41,Gift Set,Retail,3.0,4.0,9,Very happy with the purchase
+C0017,O0017-04,2026-03-29,179.7,1,179.7,Gift Set,Retail,2.0,4.0,7,Fast delivery and helpful support
+C0017,O0017-05,2026-06-03,233.52,2,116.76,Gift Set,Retail,4.0,3.0,9,Very happy with the purchase
+C0017,O0017-06,2026-06-18,471.04,4,117.76,Gift Set,Retail,2.0,2.0,10,Fast delivery and helpful support
+C0017,O0017-07,2026-07-12,151.32,1,151.32,Gift Set,Retail,3.0,5.0,9,Delivery took too long
+C0017,O0017-08,2026-07-23,216.04,4,54.01,Gift Set,Retail,2.0,4.0,2,Fast delivery and helpful support
+C0018,O0018-01,2025-09-25,387.75,1,387.75,Gift Set,Paid Search,5.0,5.0,1,Good packaging and quality
+C0019,O0019-01,2025-07-15,35.31,1,35.31,Lighting,Online,5.0,4.0,10,
+C0019,O0019-02,2025-08-21,468.63,1,468.63,Lighting,Online,2.0,5.0,9,
+C0019,O0019-03,2026-05-11,141.01,1,141.01,Lighting,Online,5.0,4.0,7,Very happy with the purchase
+C0019,O0019-04,2026-08-19,99.39,1,99.39,Lighting,Online,4.0,5.0,6,Price was high for the value
+C0020,O0020-01,2024-06-21,1510.5,5,302.1,Kitchenware,Email,5.0,3.0,7,
+C0020,O0020-02,2024-08-28,121.35,1,121.35,Kitchenware,Email,3.0,4.0,8,Fast delivery and helpful support
+C0020,O0020-03,2025-01-03,255.2,2,127.6,Kitchenware,Email,4.0,4.0,3,
+C0020,O0020-04,2025-02-11,659.64,2,329.82,Kitchenware,Email,3.0,5.0,7,Product quality could be better
+C0020,O0020-05,2026-02-06,409.82,2,204.91,Kitchenware,Email,2.0,4.0,8,Easy ordering experience
+C0021,O0021-01,2024-12-21,436.2,3,145.4,Glassware,Retail,4.0,4.0,9,Price was high for the value
+C0021,O0021-02,2025-02-04,56.67,1,56.67,Glassware,Retail,4.0,4.0,9,Very happy with the purchase
+C0021,O0021-03,2025-06-13,112.24,1,112.24,Glassware,Retail,2.0,5.0,9,Price was high for the value
+C0021,O0021-04,2025-06-15,526.8,5,105.36,Glassware,Retail,1.0,3.0,10,
+C0021,O0021-05,2025-09-12,1052.6,5,210.52,Glassware,Retail,4.0,3.0,9,Would recommend to friends
+C0022,O0022-01,2024-06-01,706.6,2,353.3,Lighting,Paid Search,5.0,5.0,6,Delivery took too long
+C0022,O0022-02,2024-06-05,333.98,2,166.99,Lighting,Paid Search,4.0,2.0,9,
+C0022,O0022-03,2025-02-26,881.6,2,440.8,Lighting,Paid Search,4.0,5.0,8,Very happy with the purchase
+C0022,O0022-04,2026-04-09,526.54,2,263.27,Lighting,Paid Search,4.0,4.0,0,Easy ordering experience
+C0023,O0023-01,2025-08-06,2601.96,1,2601.96,Lighting,Retail,4.0,4.0,7,Easy ordering experience
+C0024,O0024-01,2024-04-08,1214.12,2,607.06,Gift Set,Online,5.0,5.0,9,Fast delivery and helpful support
+C0025,O0025-01,2025-12-08,509.12,4,127.28,Kitchenware,Paid Search,4.0,5.0,8,Support response was slow
+C0026,O0026-01,2026-04-04,255.58,2,127.79,Lighting,Retail,5.0,3.0,9,Would recommend to friends
+C0027,O0027-01,2025-04-09,272.22,1,272.22,Lighting,Online,1.0,2.0,8,Very happy with the purchase
+C0027,O0027-02,2025-04-21,290.74,2,145.37,Lighting,Online,3.0,4.0,8,
+C0027,O0027-03,2025-08-03,217.2,5,43.44,Lighting,Online,5.0,5.0,7,Good packaging and quality
+C0027,O0027-04,2025-12-20,97.68,2,48.84,Lighting,Online,3.0,3.0,5,Delivery took too long
+C0027,O0027-05,2026-03-22,84.92,1,84.92,Lighting,Online,5.0,5.0,8,Fast delivery and helpful support
+C0027,O0027-06,2026-03-31,1310.95,5,262.19,Lighting,Online,5.0,1.0,6,Support response was slow
+C0027,O0027-07,2026-05-13,265.46,2,132.73,Lighting,Online,4.0,4.0,8,Very happy with the purchase
+C0028,O0028-01,2024-12-20,180.6,1,180.6,Gift Set,Retail,3.0,4.0,4,Support response was slow
+C0028,O0028-02,2025-05-28,856.58,2,428.29,Gift Set,Retail,4.0,1.0,9,Very happy with the purchase
+C0028,O0028-03,2025-09-01,120.6,1,120.6,Gift Set,Retail,1.0,4.0,9,Delivery took too long
+C0029,O0029-01,2024-08-12,377.58,2,188.79,Home Decor,Retail,,3.0,8,Would recommend to friends
+C0029,O0029-02,2024-09-14,188.25,1,188.25,Home Decor,Retail,3.0,2.0,7,Fast delivery and helpful support
+C0029,O0029-03,2024-12-21,397.72,2,198.86,Home Decor,Retail,3.0,2.0,4,Very happy with the purchase
+C0029,O0029-04,2025-02-09,155.71,1,155.71,Home Decor,Retail,2.0,3.0,9,Fast delivery and helpful support
+C0029,O0029-05,2025-08-02,245.58,3,81.86,Home Decor,Retail,4.0,3.0,9,Would recommend to friends
+C0029,O0029-06,2025-11-29,224.82,2,112.41,Home Decor,Retail,4.0,5.0,7,Fast delivery and helpful support
+C0029,O0029-07,2026-03-02,1590.86,2,795.43,Home Decor,Retail,5.0,,8,Very happy with the purchase
+C0030,O0030-01,2025-06-03,167.84,4,41.96,Storage,Referral,3.0,4.0,4,Very happy with the purchase
+C0030,O0030-02,2025-07-24,243.25,1,243.25,Storage,Referral,5.0,3.0,8,Would recommend to friends
+C0030,O0030-03,2025-10-26,77.22,3,25.74,Storage,Referral,4.0,5.0,9,Product quality could be better
+C0030,O0030-04,2025-11-11,,5,109.44,Storage,Referral,3.0,2.0,8,Price was high for the value
+C0030,O0030-05,2026-04-14,136.78,1,136.78,Storage,Referral,3.0,3.0,8,Would recommend to friends
+C0031,O0031-01,2025-02-07,188.08,1,188.08,Kitchenware,Referral,3.0,5.0,8,Very happy with the purchase
+C0031,O0031-02,2025-03-24,228.78,2,114.39,Kitchenware,Referral,3.0,4.0,8,Delivery took too long
+C0031,O0031-03,2025-07-09,119.6,1,119.6,Kitchenware,Referral,2.0,5.0,10,Easy ordering experience
+C0031,O0031-04,2026-05-14,227.78,2,113.89,Kitchenware,Referral,1.0,4.0,8,Delivery took too long
+C0031,O0031-05,2026-05-22,961.32,2,480.66,Kitchenware,Referral,4.0,5.0,9,Fast delivery and helpful support
+C0032,O0032-01,2025-03-28,368.3,2,184.15,Lighting,Retail,4.0,5.0,9,Easy ordering experience
+C0032,O0032-02,2025-04-03,230.17,1,230.17,Lighting,Retail,5.0,4.0,9,Product quality could be better
+C0032,O0032-03,2025-06-11,175.22,2,87.61,Lighting,Retail,2.0,2.0,5,Very happy with the purchase
+C0032,O0032-04,2025-09-15,129.85,1,129.85,Lighting,Retail,5.0,1.0,8,Very happy with the purchase
+C0033,O0033-01,2024-06-17,92.17,1,92.17,Lighting,Online,1.0,3.0,6,Very happy with the purchase
+C0033,O0033-02,2024-08-05,302.74,1,302.74,Lighting,Online,2.0,3.0,4,Would recommend to friends
+C0033,O0033-03,2024-11-25,336.36,4,84.09,Lighting,Online,1.0,2.0,9,Fast delivery and helpful support
+C0033,O0033-04,2025-02-05,224.52,3,74.84,Lighting,Online,4.0,4.0,9,Would recommend to friends
+C0033,O0033-05,2025-11-15,550.68,4,137.67,Lighting,Online,4.0,3.0,10,Fast delivery and helpful support
+C0034,O0034-01,2024-12-26,286.2,1,286.2,Storage,Retail,4.0,3.0,7,Product quality could be better
+C0034,O0034-02,2025-01-02,182.18,1,182.18,Storage,Retail,4.0,5.0,8,Would recommend to friends
+C0034,O0034-03,2025-01-08,1240.85,5,248.17,Storage,Retail,5.0,3.0,9,Support response was slow
+C0034,O0034-04,2025-02-17,182.1,1,182.1,Storage,Retail,3.0,4.0,10,Good packaging and quality
+C0034,O0034-05,2025-09-06,149.02,1,149.02,Storage,Retail,4.0,3.0,8,Delivery took too long
+C0034,O0034-06,2025-11-07,175.94,1,175.94,Storage,Retail,2.0,5.0,6,Good packaging and quality
+C0034,O0034-07,2025-12-19,115.92,1,115.92,Storage,Retail,4.0,5.0,8,Would recommend to friends
+C0035,O0035-01,2025-05-01,517.36,2,258.68,Glassware,Online,5.0,4.0,9,Would recommend to friends
+C0035,O0035-02,2025-05-02,159.32,2,79.66,Glassware,Online,4.0,4.0,9,Good packaging and quality
+C0035,O0035-03,2025-05-12,1589.74,2,794.87,Glassware,Online,1.0,4.0,1,Delivery took too long
+C0035,O0035-04,2025-07-07,103.79,1,103.79,Glassware,Online,4.0,5.0,9,
+C0035,O0035-05,2025-07-23,72.23,1,72.23,Glassware,Online,1.0,1.0,10,Would recommend to friends
+C0035,O0035-06,2025-08-01,697.5,2,348.75,Glassware,Online,4.0,5.0,9,Good packaging and quality
+C0036,O0036-01,2024-08-14,189.21,1,189.21,Gift Set,Paid Search,4.0,4.0,10,Easy ordering experience
+C0036,O0036-02,2024-11-12,139.03,1,139.03,Gift Set,Paid Search,2.0,1.0,7,Easy ordering experience
+C0036,O0036-03,2024-12-15,99.95,1,99.95,Gift Set,Paid Search,5.0,5.0,8,Good packaging and quality
+C0037,O0037-01,2025-12-18,31.1,1,31.1,Storage,Retail,4.0,5.0,8,Very happy with the purchase
+C0038,O0038-01,2024-10-26,137.62,1,137.62,Kitchenware,Online,,3.0,7,Delivery took too long
+C0038,O0038-02,2025-02-06,381.79,1,381.79,Kitchenware,Online,4.0,5.0,6,Support response was slow
+C0038,O0038-03,2026-03-02,348.31,1,348.31,Kitchenware,Online,4.0,5.0,10,Easy ordering experience
+C0038,O0038-04,2026-04-18,426.4,2,213.2,Kitchenware,Online,3.0,2.0,10,Easy ordering experience
+C0038,O0038-05,2026-09-03,221.52,2,110.76,Kitchenware,Online,4.0,3.0,5,
+C0039,O0039-01,2025-02-21,1132.41,3,377.47,Lighting,Retail,5.0,1.0,10,Very happy with the purchase
+C0039,O0039-02,2025-04-04,261.46,2,130.73,Lighting,Retail,3.0,5.0,6,Would recommend to friends
+C0039,O0039-03,2025-05-08,96.72,2,48.36,Lighting,Retail,,3.0,8,Very happy with the purchase
+C0039,O0039-04,2025-08-15,153.75,1,153.75,Lighting,Retail,4.0,4.0,10,Would recommend to friends
+C0039,O0039-05,2025-08-25,45.78,1,45.78,Lighting,Retail,1.0,5.0,7,Very happy with the purchase
+C0039,O0039-06,2026-01-09,389.31,3,129.77,Lighting,Retail,2.0,4.0,10,Support response was slow
+C0040,O0040-01,2025-03-24,171.1,1,171.1,Gift Set,Paid Search,5.0,4.0,2,Product quality could be better
+C0040,O0040-02,2025-03-30,156.82,2,78.41,Gift Set,Paid Search,4.0,3.0,8,Fast delivery and helpful support
+C0040,O0040-03,2025-03-31,281.06,2,140.53,Gift Set,Paid Search,5.0,3.0,6,Very happy with the purchase
+C0040,O0040-04,2025-08-26,101.42,1,101.42,Gift Set,Paid Search,,5.0,2,Fast delivery and helpful support
+C0040,O0040-05,2025-09-27,177.24,2,88.62,Gift Set,Paid Search,3.0,3.0,8,Very happy with the purchase
+C0040,O0040-06,2025-10-12,281.14,1,281.14,Gift Set,Paid Search,4.0,2.0,9,Fast delivery and helpful support
+C0040,O0040-07,2025-12-03,125.71,1,125.71,Gift Set,Paid Search,5.0,5.0,6,Fast delivery and helpful support
+C0041,O0041-01,2024-07-31,120.64,1,120.64,Glassware,Email,4.0,4.0,9,Easy ordering experience
+C0041,O0041-02,2024-07-31,86.36,1,86.36,Glassware,Email,4.0,4.0,9,Support response was slow
+C0041,O0041-03,2024-10-06,300.71,1,300.71,Glassware,Email,4.0,5.0,3,Good packaging and quality
+C0041,O0041-04,2025-04-03,238.42,2,119.21,Glassware,Email,3.0,4.0,6,Fast delivery and helpful support
+C0041,O0041-05,2025-11-26,472.94,2,236.47,Glassware,Email,5.0,4.0,9,Product quality could be better
+C0042,O0042-01,2024-07-21,312.98,2,156.49,Storage,Online,1.0,2.0,5,
+C0042,O0042-02,2025-06-28,242.0,2,121.0,Storage,Online,5.0,5.0,7,Very happy with the purchase
+C0043,O0043-01,2025-05-11,176.59,1,176.59,Lighting,Online,5.0,3.0,7,Good packaging and quality
+C0043,O0043-02,2025-06-19,677.66,2,338.83,Lighting,Online,2.0,3.0,5,Product quality could be better
+C0043,O0043-03,2025-07-30,1696.38,2,848.19,Lighting,Online,4.0,4.0,8,Price was high for the value
+C0043,O0043-04,2026-03-11,259.24,2,129.62,Lighting,Online,4.0,2.0,8,Good packaging and quality
+C0043,O0043-05,2026-05-14,82.86,1,82.86,Lighting,Online,3.0,5.0,9,
+C0044,O0044-01,2025-01-29,449.31,3,149.77,Glassware,Online,4.0,3.0,8,Good packaging and quality
+C0044,O0044-02,2025-07-08,220.97,1,220.97,Glassware,Online,5.0,5.0,7,Fast delivery and helpful support
+C0044,O0044-03,2025-07-27,347.66,2,173.83,Glassware,Online,5.0,5.0,9,Easy ordering experience
+C0044,O0044-04,2025-10-18,168.47,1,168.47,Glassware,Online,4.0,3.0,5,Fast delivery and helpful support
+C0044,O0044-05,2025-11-07,118.54,1,118.54,Glassware,Online,4.0,5.0,8,Good packaging and quality
+C0044,O0044-06,2026-04-02,329.3,2,164.65,Glassware,Online,5.0,3.0,0,Delivery took too long
+C0044,O0044-07,2026-04-15,289.5,3,96.5,Glassware,Online,3.0,1.0,10,Good packaging and quality
+C0044,O0044-08,2026-04-19,71.56,1,71.56,Glassware,Online,,1.0,10,Good packaging and quality
+C0045,O0045-01,2025-01-16,85.58,2,42.79,Glassware,Retail,3.0,3.0,6,Would recommend to friends
+C0045,O0045-02,2025-02-13,347.35,1,347.35,Glassware,Retail,4.0,5.0,4,Delivery took too long
+C0045,O0045-03,2025-04-19,110.72,1,110.72,Glassware,Retail,4.0,4.0,4,Easy ordering experience
+C0045,O0045-04,2025-07-21,81.49,1,81.49,Glassware,Retail,5.0,5.0,10,Very happy with the purchase
+C0045,O0045-05,2025-08-25,101.87,1,101.87,Glassware,Retail,4.0,4.0,7,Would recommend to friends
+C0045,O0045-06,2025-12-02,436.22,1,436.22,Glassware,Retail,4.0,2.0,10,Very happy with the purchase
+C0046,O0046-01,2024-08-14,254.94,1,254.94,Storage,Email,4.0,5.0,9,Good packaging and quality
+C0047,O0047-01,2025-06-18,209.04,2,104.52,Kitchenware,Retail,4.0,4.0,7,Fast delivery and helpful support
+C0047,O0047-02,2025-06-27,78.43,1,78.43,Kitchenware,Retail,3.0,3.0,4,
+C0047,O0047-03,2025-08-19,362.4,2,181.2,Kitchenware,Retail,2.0,2.0,6,Very happy with the purchase
+C0047,O0047-04,2025-10-28,3741.25,5,748.25,Kitchenware,Retail,2.0,4.0,7,Easy ordering experience
+C0047,O0047-05,2026-03-13,234.5,1,234.5,Kitchenware,Retail,4.0,5.0,0,Very happy with the purchase
+C0047,O0047-06,2026-10-10,462.4,4,115.6,Kitchenware,Retail,2.0,4.0,0,Support response was slow
+C0048,O0048-01,2026-05-10,269.56,2,134.78,Gift Set,Online,5.0,4.0,9,Easy ordering experience
+C0049,O0049-01,2025-10-08,204.65,1,204.65,Storage,Email,5.0,4.0,7,Price was high for the value
+C0050,O0050-01,2026-06-10,145.69,1,145.69,Kitchenware,Referral,5.0,3.0,9,Good packaging and quality
+C0051,O0051-01,2024-09-21,266.96,2,133.48,Glassware,Online,5.0,4.0,8,Delivery took too long
+C0051,O0051-02,2024-11-20,323.31,3,107.77,Glassware,Online,1.0,3.0,0,Fast delivery and helpful support
+C0051,O0051-03,2025-02-27,236.46,1,236.46,Glassware,Online,4.0,5.0,10,Product quality could be better
+C0051,O0051-04,2025-08-14,415.82,2,207.91,Glassware,Online,2.0,3.0,8,Product quality could be better
+C0051,O0051-05,2025-10-16,325.9,2,162.95,Glassware,Online,5.0,4.0,8,Fast delivery and helpful support
+C0051,O0051-06,2026-03-08,251.99,1,251.99,Glassware,Online,4.0,3.0,4,Product quality could be better
+C0051,O0051-07,2026-04-08,491.2,5,98.24,Glassware,Online,4.0,3.0,7,Product quality could be better
+C0052,O0052-01,2024-06-21,406.8,2,203.4,Storage,Referral,3.0,4.0,6,Product quality could be better
+C0052,O0052-02,2024-10-04,103.6,1,103.6,Storage,Referral,3.0,3.0,10,Price was high for the value
+C0052,O0052-03,2025-01-17,928.0,2,464.0,Storage,Referral,3.0,5.0,10,Very happy with the purchase
+C0052,O0052-04,2025-06-07,252.92,1,252.92,Storage,Referral,3.0,4.0,0,
+C0052,O0052-05,2025-12-12,297.18,2,148.59,Storage,Referral,3.0,5.0,10,Support response was slow
+C0052,O0052-06,2026-04-18,461.88,2,230.94,Storage,Referral,3.0,2.0,8,Support response was slow
+C0053,O0053-01,2024-10-29,108.46,1,108.46,Storage,Online,4.0,5.0,8,
+C0053,O0053-02,2025-09-29,655.74,2,327.87,Storage,Online,4.0,2.0,8,Delivery took too long
+C0053,O0053-03,2026-06-14,167.01,1,167.01,Storage,Online,5.0,4.0,9,Good packaging and quality
+C0054,O0054-01,2024-04-27,118.07,1,118.07,Lighting,Paid Search,5.0,4.0,3,Easy ordering experience
+C0054,O0054-02,2025-03-25,208.97,1,208.97,Lighting,Paid Search,5.0,2.0,10,Very happy with the purchase
+C0054,O0054-03,2026-05-25,68.86,1,68.86,Lighting,Paid Search,4.0,2.0,6,Easy ordering experience
+C0055,O0055-01,2025-01-06,749.32,2,374.66,Kitchenware,Paid Search,4.0,2.0,7,Fast delivery and helpful support
+C0055,O0055-02,2025-08-20,235.8,2,117.9,Kitchenware,Paid Search,1.0,3.0,4,Price was high for the value
+C0055,O0055-03,2026-03-29,262.8,1,262.8,Kitchenware,Paid Search,5.0,4.0,9,Very happy with the purchase
+C0055,O0055-04,2026-05-21,228.18,1,228.18,Kitchenware,Paid Search,4.0,4.0,5,Fast delivery and helpful support
+C0055,O0055-05,2026-06-01,209.24,1,209.24,Kitchenware,Paid Search,3.0,3.0,7,Support response was slow
+C0056,O0056-01,2025-04-30,192.14,1,192.14,Glassware,Email,4.0,3.0,10,Price was high for the value
+C0057,O0057-01,2026-03-14,230.95,1,230.95,Lighting,Paid Search,5.0,,7,Price was high for the value
+C0058,O0058-01,2024-08-12,1108.45,5,221.69,Storage,Paid Search,3.0,2.0,9,Would recommend to friends
+C0058,O0058-02,2024-08-20,128.31,1,128.31,Storage,Paid Search,5.0,3.0,10,Very happy with the purchase
+C0058,O0058-03,2024-09-15,220.9,2,110.45,Storage,Paid Search,4.0,3.0,10,Easy ordering experience
+C0058,O0058-04,2025-01-18,79.24,2,39.62,Storage,Paid Search,4.0,4.0,10,
+C0058,O0058-05,2025-01-28,104.86,1,104.86,Storage,Paid Search,4.0,1.0,10,Fast delivery and helpful support
+C0058,O0058-06,2025-06-01,953.4,5,190.68,Storage,Paid Search,4.0,2.0,8,Product quality could be better
+C0058,O0058-07,2026-06-26,135.9,1,135.9,Storage,Paid Search,4.0,3.0,9,Very happy with the purchase
+C0058,O0058-08,2026-06-30,146.89,1,146.89,Storage,Paid Search,4.0,5.0,10,Delivery took too long
+C0059,O0059-01,2025-07-31,225.56,2,112.78,Home Decor,Paid Search,4.0,4.0,6,Easy ordering experience
+C0059,O0059-02,2025-08-27,670.76,2,335.38,Home Decor,Paid Search,2.0,2.0,10,Easy ordering experience
+C0059,O0059-03,2025-11-29,334.0,4,83.5,Home Decor,Paid Search,3.0,3.0,5,Support response was slow
+C0059,O0059-04,2026-04-17,302.0,1,302.0,Home Decor,Paid Search,4.0,5.0,5,Product quality could be better
+C0059,O0059-05,2026-06-22,259.54,2,129.77,Home Decor,Paid Search,4.0,3.0,6,Fast delivery and helpful support
+C0060,O0060-01,2025-09-14,88.38,2,44.19,Lighting,Email,4.0,5.0,7,Good packaging and quality
+C0060,O0060-02,2025-11-25,301.24,2,150.62,Lighting,Email,4.0,4.0,10,
+C0060,O0060-03,2026-01-01,325.85,1,325.85,Lighting,Email,4.0,4.0,9,Price was high for the value
+C0060,O0060-04,2026-03-04,989.5,5,197.9,Lighting,Email,4.0,2.0,6,Support response was slow
+C0060,O0060-05,2026-03-27,92.01,1,92.01,Lighting,Email,5.0,2.0,10,Price was high for the value
+C0060,O0060-06,2026-07-29,301.14,3,100.38,Lighting,Email,2.0,2.0,5,Good packaging and quality
+C0061,O0061-01,2026-04-29,352.96,1,352.96,Storage,Online,5.0,3.0,1,Easy ordering experience
+C0062,O0062-01,2025-09-04,409.26,2,204.63,Gift Set,Paid Search,3.0,3.0,10,Good packaging and quality
+C0062,O0062-02,2026-01-03,215.46,2,107.73,Gift Set,Paid Search,4.0,2.0,6,Product quality could be better
+C0062,O0062-03,2026-05-18,334.62,2,167.31,Gift Set,Paid Search,3.0,5.0,7,Easy ordering experience
+C0062,O0062-04,2026-06-27,304.89,1,304.89,Gift Set,Paid Search,4.0,4.0,7,Product quality could be better
+C0063,O0063-01,2025-03-26,93.2,1,93.2,Lighting,Paid Search,5.0,2.0,8,Good packaging and quality
+C0064,O0064-01,2025-06-01,816.1,2,408.05,Home Decor,Paid Search,4.0,1.0,9,Support response was slow
+C0064,O0064-02,2025-08-28,50.33,1,50.33,Home Decor,Paid Search,4.0,2.0,9,Good packaging and quality
+C0064,O0064-03,2025-10-07,140.71,1,140.71,Home Decor,Paid Search,1.0,4.0,5,Would recommend to friends
+C0064,O0064-04,2026-02-14,433.23,3,144.41,Home Decor,Paid Search,4.0,2.0,10,
+C0064,O0064-05,2026-07-29,86.4,1,86.4,Home Decor,Paid Search,4.0,2.0,8,Delivery took too long
+C0065,O0065-01,2026-04-29,408.08,4,102.02,Storage,Online,5.0,4.0,4,Fast delivery and helpful support
+C0066,O0066-01,2024-04-21,228.64,4,57.16,Lighting,Referral,4.0,5.0,9,Good packaging and quality
+C0066,O0066-02,2024-11-02,147.99,1,147.99,Lighting,Referral,4.0,3.0,8,Product quality could be better
+C0066,O0066-03,2025-12-30,1060.73,1,1060.73,Lighting,Referral,3.0,3.0,9,Support response was slow
+C0067,O0067-01,2025-05-01,85.25,1,85.25,Kitchenware,Retail,5.0,4.0,7,Good packaging and quality
+C0067,O0067-02,2025-05-04,203.99,1,203.99,Kitchenware,Retail,3.0,4.0,0,
+C0067,O0067-03,2025-08-15,560.52,4,140.13,Kitchenware,Retail,5.0,5.0,10,Delivery took too long
+C0067,O0067-04,2026-01-13,280.06,2,140.03,Kitchenware,Retail,4.0,3.0,2,Very happy with the purchase
+C0068,O0068-01,2025-08-29,627.68,2,313.84,Glassware,Online,3.0,2.0,8,Delivery took too long
+C0068,O0068-02,2025-12-12,181.72,2,90.86,Glassware,Online,4.0,5.0,8,Support response was slow
+C0068,O0068-03,2025-12-15,294.3,2,147.15,Glassware,Online,4.0,5.0,3,Would recommend to friends
+C0068,O0068-04,2026-05-16,750.86,2,375.43,Glassware,Online,4.0,4.0,4,Would recommend to friends
+C0068,O0068-05,2026-07-12,289.27,1,289.27,Glassware,Online,2.0,5.0,9,
+C0068,O0068-06,2026-07-12,,2,126.34,Glassware,Online,4.0,5.0,10,Would recommend to friends
+C0069,O0069-01,2025-10-17,541.95,5,108.39,Kitchenware,Paid Search,5.0,2.0,10,Easy ordering experience
+C0069,O0069-02,2026-03-29,1016.2,4,254.05,Kitchenware,Paid Search,3.0,1.0,8,Good packaging and quality
+C0070,O0070-01,2024-12-16,84.23,1,84.23,Storage,Paid Search,4.0,3.0,8,Very happy with the purchase
+C0070,O0070-02,2025-01-08,209.92,1,209.92,Storage,Paid Search,4.0,4.0,8,Easy ordering experience
+C0070,O0070-03,2025-03-01,304.56,3,101.52,Storage,Paid Search,4.0,4.0,0,Good packaging and quality
+C0070,O0070-04,2025-03-23,135.1,2,67.55,Storage,Paid Search,1.0,5.0,9,Product quality could be better
+C0071,O0071-01,2025-01-21,53.87,1,53.87,Glassware,Online,4.0,2.0,8,Good packaging and quality
+C0071,O0071-02,2025-07-13,43.96,1,43.96,Glassware,Online,1.0,5.0,9,Good packaging and quality
+C0071,O0071-03,2025-09-13,848.24,4,212.06,Glassware,Online,5.0,3.0,7,Very happy with the purchase
+C0071,O0071-04,2025-12-30,213.21,1,213.21,Glassware,Online,3.0,2.0,8,Price was high for the value
+C0071,O0071-05,2026-06-19,128.57,1,128.57,Glassware,Online,,5.0,8,Delivery took too long
+C0072,O0072-01,2024-12-18,109.89,1,109.89,Storage,Email,5.0,5.0,8,
+C0072,O0072-02,2025-07-17,96.11,1,96.11,Storage,Email,5.0,3.0,10,Would recommend to friends
+C0072,O0072-03,2025-12-06,582.84,2,291.42,Storage,Email,3.0,5.0,4,Delivery took too long
+C0073,O0073-01,2025-01-28,882.4,2,441.2,Home Decor,Online,3.0,3.0,10,Delivery took too long
+C0073,O0073-02,2025-04-19,150.91,1,150.91,Home Decor,Online,3.0,,8,Very happy with the purchase
+C0073,O0073-03,2025-08-19,428.18,1,428.18,Home Decor,Online,3.0,5.0,5,Fast delivery and helpful support
+C0073,O0073-04,2025-11-13,136.74,1,136.74,Home Decor,Online,5.0,5.0,8,Price was high for the value
+C0073,O0073-05,2026-08-12,104.77,1,104.77,Home Decor,Online,5.0,3.0,7,Fast delivery and helpful support
+C0073,O0073-06,2026-08-12,218.15,5,43.63,Home Decor,Online,2.0,4.0,8,Product quality could be better
+C0074,O0074-01,2026-01-10,229.68,1,229.68,Gift Set,Online,5.0,3.0,7,Price was high for the value
+C0074,O0074-02,2026-01-24,395.61,3,131.87,Gift Set,Online,3.0,3.0,5,Good packaging and quality
+C0074,O0074-03,2026-09-01,272.34,1,272.34,Gift Set,Online,3.0,2.0,8,Very happy with the purchase
+C0075,O0075-01,2026-04-03,334.38,2,167.19,Glassware,Email,3.0,2.0,8,Very happy with the purchase
+C0076,O0076-01,2024-04-20,50.37,1,50.37,Lighting,Online,2.0,2.0,10,Would recommend to friends
+C0076,O0076-02,2024-05-16,109.32,1,109.32,Lighting,Online,4.0,3.0,8,Product quality could be better
+C0076,O0076-03,2024-10-21,85.79,1,85.79,Lighting,Online,4.0,5.0,5,Product quality could be better
+C0076,O0076-04,2024-11-19,135.08,2,67.54,Lighting,Online,5.0,4.0,9,
+C0076,O0076-05,2025-04-02,395.36,2,197.68,Lighting,Online,3.0,,6,Very happy with the purchase
+C0076,O0076-06,2025-10-06,826.78,2,413.39,Lighting,Online,1.0,1.0,9,Very happy with the purchase
+C0076,O0076-07,2025-10-31,125.06,1,125.06,Lighting,Online,5.0,5.0,7,Fast delivery and helpful support
+C0077,O0077-01,2025-05-25,53.81,1,53.81,Glassware,Retail,5.0,1.0,7,Product quality could be better
+C0077,O0077-02,2025-10-17,403.0,2,201.5,Glassware,Retail,2.0,5.0,7,Good packaging and quality
+C0078,O0078-01,2025-10-23,98.35,1,98.35,Home Decor,Retail,3.0,4.0,10,Would recommend to friends
+C0078,O0078-02,2026-07-21,54.84,1,54.84,Home Decor,Retail,5.0,1.0,2,Very happy with the purchase
+C0079,O0079-01,2025-04-11,142.63,1,142.63,Storage,Referral,,4.0,8,Would recommend to friends
+C0079,O0079-02,2025-10-24,283.88,1,283.88,Storage,Referral,5.0,3.0,8,Delivery took too long
+C0080,O0080-01,2025-10-24,46.37,1,46.37,Kitchenware,Email,3.0,4.0,10,
+C0080,O0080-02,2025-11-12,408.2,5,81.64,Kitchenware,Email,4.0,,10,Good packaging and quality
+C0081,O0081-01,2024-12-17,75.53,1,75.53,Home Decor,Referral,4.0,4.0,9,Very happy with the purchase
+C0081,O0081-02,2025-04-01,243.98,2,121.99,Home Decor,Referral,5.0,4.0,8,Fast delivery and helpful support
+C0081,O0081-03,2025-05-12,1261.1,5,252.22,Home Decor,Referral,2.0,5.0,9,Support response was slow
+C0081,O0081-04,2025-06-11,307.31,1,307.31,Home Decor,Referral,4.0,2.0,9,Easy ordering experience
+C0081,O0081-05,2026-01-09,88.78,1,88.78,Home Decor,Referral,5.0,5.0,9,Would recommend to friends
+C0081,O0081-06,2026-01-20,329.44,1,329.44,Home Decor,Referral,2.0,2.0,7,Price was high for the value
+C0081,O0081-07,2026-06-06,,1,116.4,Home Decor,Referral,4.0,1.0,5,
+C0081,O0081-08,2026-06-07,369.3,3,123.1,Home Decor,Referral,3.0,3.0,9,Fast delivery and helpful support
+C0082,O0082-01,2024-05-19,175.58,1,175.58,Glassware,Referral,5.0,1.0,10,Very happy with the purchase
+C0082,O0082-02,2025-08-05,506.43,3,168.81,Glassware,Referral,4.0,1.0,10,Fast delivery and helpful support
+C0083,O0083-01,2026-04-09,1081.56,4,270.39,Home Decor,Paid Search,2.0,5.0,0,Easy ordering experience
+C0083,O0083-02,2026-05-14,210.58,2,105.29,Home Decor,Paid Search,4.0,4.0,7,Fast delivery and helpful support
+C0084,O0084-01,2024-05-24,256.24,4,64.06,Gift Set,Referral,3.0,5.0,10,Fast delivery and helpful support
+C0084,O0084-02,2025-06-15,374.18,2,187.09,Gift Set,Referral,4.0,3.0,7,Fast delivery and helpful support
+C0084,O0084-03,2025-06-23,54.85,1,54.85,Gift Set,Referral,4.0,5.0,2,Delivery took too long
+C0084,O0084-04,2025-07-16,183.52,2,91.76,Gift Set,Referral,4.0,5.0,10,Price was high for the value
+C0084,O0084-05,2025-09-03,200.14,2,100.07,Gift Set,Referral,4.0,4.0,7,Product quality could be better
+C0084,O0084-06,2025-09-26,175.48,1,175.48,Gift Set,Referral,4.0,2.0,9,Good packaging and quality
+C0085,O0085-01,2025-09-05,794.67,3,264.89,Storage,Email,3.0,4.0,9,Would recommend to friends
+C0085,O0085-02,2025-09-10,220.74,2,110.37,Storage,Email,5.0,3.0,8,Fast delivery and helpful support
+C0085,O0085-03,2026-03-20,571.04,1,571.04,Storage,Email,3.0,2.0,10,Price was high for the value
+C0085,O0085-04,2026-06-19,155.88,1,155.88,Storage,Email,4.0,3.0,7,
+C0085,O0085-05,2026-06-23,246.67,1,246.67,Storage,Email,4.0,4.0,9,Very happy with the purchase
+C0086,O0086-01,2024-05-23,174.56,1,174.56,Lighting,Retail,4.0,3.0,4,Good packaging and quality
+C0087,O0087-01,2025-01-14,150.88,2,75.44,Storage,Referral,4.0,4.0,7,Very happy with the purchase
+C0087,O0087-02,2025-09-13,159.31,1,159.31,Storage,Referral,4.0,2.0,7,Product quality could be better
+C0087,O0087-03,2025-09-28,173.62,1,173.62,Storage,Referral,1.0,5.0,10,Easy ordering experience
+C0087,O0087-04,2025-12-29,95.1,1,95.1,Storage,Referral,3.0,4.0,7,Would recommend to friends
+C0087,O0087-05,2026-01-11,326.82,2,163.41,Storage,Referral,5.0,5.0,0,Very happy with the purchase
+C0087,O0087-06,2026-03-28,202.98,3,67.66,Storage,Referral,3.0,3.0,3,Fast delivery and helpful support
+C0087,O0087-07,2026-07-05,89.05,1,89.05,Storage,Referral,5.0,4.0,4,Very happy with the purchase
+C0088,O0088-01,2025-06-14,3254.76,1,3254.76,Kitchenware,Online,3.0,4.0,9,Fast delivery and helpful support
+C0088,O0088-02,2025-09-27,52.93,1,52.93,Kitchenware,Online,3.0,3.0,3,Product quality could be better
+C0088,O0088-03,2025-12-15,129.74,1,129.74,Kitchenware,Online,2.0,4.0,4,Support response was slow
+C0088,O0088-04,2026-04-05,136.76,1,136.76,Kitchenware,Online,4.0,,10,
+C0088,O0088-05,2026-06-27,58.84,1,58.84,Kitchenware,Online,4.0,4.0,4,Delivery took too long
+C0089,O0089-01,2025-12-21,97.2,1,97.2,Storage,Paid Search,4.0,4.0,7,Easy ordering experience
+C0089,O0089-02,2026-02-05,473.08,2,236.54,Storage,Paid Search,5.0,4.0,0,Good packaging and quality
+C0090,O0090-01,2025-08-07,88.73,1,88.73,Kitchenware,Paid Search,4.0,4.0,6,
+C0091,O0091-01,2025-08-28,1985.92,4,496.48,Home Decor,Online,3.0,3.0,9,Product quality could be better
+C0091,O0091-02,2025-09-11,204.94,2,102.47,Home Decor,Online,,3.0,7,Support response was slow
+C0091,O0091-03,2025-11-01,104.93,1,104.93,Home Decor,Online,1.0,3.0,9,Very happy with the purchase
+C0092,O0092-01,2026-02-08,222.01,1,222.01,Lighting,Referral,3.0,4.0,6,Easy ordering experience
+C0092,O0092-02,2026-02-26,400.58,2,200.29,Lighting,Referral,4.0,4.0,7,Price was high for the value
+C0092,O0092-03,2026-03-04,251.85,1,251.85,Lighting,Referral,4.0,3.0,10,Good packaging and quality
+C0092,O0092-04,2026-03-22,286.02,1,286.02,Lighting,Referral,5.0,4.0,10,Fast delivery and helpful support
+C0092,O0092-05,2026-04-22,268.28,2,134.14,Lighting,Referral,5.0,4.0,0,Price was high for the value
+C0093,O0093-01,2025-09-29,125.76,1,125.76,Glassware,Paid Search,4.0,2.0,5,Product quality could be better
+C0093,O0093-02,2026-01-03,378.4,4,94.6,Glassware,Paid Search,5.0,5.0,7,Price was high for the value
+C0093,O0093-03,2026-03-03,78.62,1,78.62,Glassware,Paid Search,5.0,2.0,7,Good packaging and quality
+C0093,O0093-04,2026-06-04,227.26,2,113.63,Glassware,Paid Search,4.0,5.0,7,Very happy with the purchase
+C0093,O0093-05,2026-06-15,72.7,1,72.7,Glassware,Paid Search,5.0,3.0,3,Product quality could be better
+C0093,O0093-06,2026-08-02,100.37,1,100.37,Glassware,Paid Search,5.0,4.0,10,Delivery took too long
+C0094,O0094-01,2024-12-18,67.86,1,67.86,Storage,Paid Search,4.0,1.0,9,Would recommend to friends
+C0094,O0094-02,2025-06-21,106.52,1,106.52,Storage,Paid Search,4.0,5.0,9,Product quality could be better
+C0094,O0094-03,2025-09-13,156.58,2,78.29,Storage,Paid Search,3.0,3.0,8,Easy ordering experience
+C0094,O0094-04,2026-01-09,689.8,4,172.45,Storage,Paid Search,5.0,5.0,10,
+C0094,O0094-05,2026-04-22,72.47,1,72.47,Storage,Paid Search,3.0,5.0,9,Very happy with the purchase
+C0094,O0094-06,2026-06-23,118.46,1,118.46,Storage,Paid Search,2.0,3.0,8,Very happy with the purchase
+C0094,O0094-07,2026-08-31,780.1,2,390.05,Storage,Paid Search,3.0,5.0,8,Delivery took too long
+C0094,O0094-08,2026-09-13,592.81,1,592.81,Storage,Paid Search,5.0,3.0,4,Easy ordering experience
+C0095,O0095-01,2024-12-24,207.54,1,207.54,Gift Set,Online,4.0,5.0,8,Very happy with the purchase
+C0095,O0095-02,2025-09-01,130.25,1,130.25,Gift Set,Online,5.0,4.0,9,Price was high for the value
+C0095,O0095-03,2026-01-02,152.69,1,152.69,Gift Set,Online,4.0,5.0,8,Product quality could be better
+C0095,O0095-04,2026-07-07,144.14,1,144.14,Gift Set,Online,2.0,3.0,7,Easy ordering experience
+C0095,O0095-05,2026-08-19,583.16,2,291.58,Gift Set,Online,3.0,4.0,10,Would recommend to friends
+C0096,O0096-01,2025-01-06,264.13,1,264.13,Glassware,Email,3.0,5.0,5,Delivery took too long
+C0096,O0096-02,2025-02-01,1039.48,4,259.87,Glassware,Email,5.0,4.0,10,Fast delivery and helpful support
+C0096,O0096-03,2026-06-26,240.35,1,240.35,Glassware,Email,3.0,1.0,8,Fast delivery and helpful support
+C0096,O0096-04,2026-07-31,20.9,1,20.9,Glassware,Email,5.0,5.0,7,Easy ordering experience
+C0097,O0097-01,2025-04-17,431.15,1,431.15,Gift Set,Online,5.0,3.0,4,Easy ordering experience
+C0097,O0097-02,2025-04-30,737.22,3,245.74,Gift Set,Online,4.0,3.0,9,Fast delivery and helpful support
+C0097,O0097-03,2025-06-03,90.27,1,90.27,Gift Set,Online,5.0,3.0,5,Very happy with the purchase
+C0097,O0097-04,2025-08-21,35.58,1,35.58,Gift Set,Online,4.0,1.0,7,Delivery took too long
+C0097,O0097-05,2025-08-28,241.95,3,80.65,Gift Set,Online,3.0,4.0,8,Product quality could be better
+C0097,O0097-06,2025-09-17,155.07,3,51.69,Gift Set,Online,4.0,4.0,8,
+C0097,O0097-07,2026-03-11,529.06,2,264.53,Gift Set,Online,4.0,4.0,9,Very happy with the purchase
+C0098,O0098-01,2025-07-27,109.64,1,109.64,Home Decor,Online,5.0,3.0,9,Easy ordering experience
+C0098,O0098-02,2025-10-12,937.74,2,468.87,Home Decor,Online,4.0,4.0,7,Fast delivery and helpful support
+C0098,O0098-03,2025-11-04,286.4,5,57.28,Home Decor,Online,5.0,5.0,7,Product quality could be better
+C0099,O0099-01,2024-12-21,257.4,2,128.7,Gift Set,Paid Search,4.0,4.0,6,Product quality could be better
+C0099,O0099-02,2025-01-01,298.7,2,149.35,Gift Set,Paid Search,5.0,3.0,9,Easy ordering experience
+C0099,O0099-03,2025-02-05,2944.35,5,588.87,Gift Set,Paid Search,2.0,3.0,7,Fast delivery and helpful support
+C0099,O0099-04,2025-03-11,232.25,5,46.45,Gift Set,Paid Search,2.0,5.0,10,Would recommend to friends
+C0099,O0099-05,2025-06-01,305.3,2,152.65,Gift Set,Paid Search,4.0,3.0,10,Good packaging and quality
+C0099,O0099-06,2025-11-16,40.58,1,40.58,Gift Set,Paid Search,3.0,4.0,9,Fast delivery and helpful support
+C0099,O0099-07,2025-12-13,37.19,1,37.19,Gift Set,Paid Search,5.0,3.0,9,Would recommend to friends
+C0099,O0099-08,2025-12-24,264.95,1,264.95,Gift Set,Paid Search,3.0,3.0,2,Price was high for the value
+C0100,O0100-01,2024-11-23,2135.9,5,427.18,Kitchenware,Paid Search,4.0,4.0,10,
+C0100,O0100-02,2025-02-21,167.39,1,167.39,Kitchenware,Paid Search,5.0,3.0,10,Would recommend to friends
+C0100,O0100-03,2025-06-30,414.24,4,103.56,Kitchenware,Paid Search,4.0,4.0,7,Very happy with the purchase
+C0100,O0100-04,2026-06-24,365.84,2,182.92,Kitchenware,Paid Search,4.0,2.0,10,Fast delivery and helpful support
+C0101,O0101-01,2025-09-08,180.44,2,90.22,Lighting,Retail,3.0,4.0,8,
+C0101,O0101-02,2025-10-09,1224.28,4,306.07,Lighting,Retail,1.0,5.0,10,
+C0101,O0101-03,2025-11-19,276.37,1,276.37,Lighting,Retail,5.0,2.0,7,Very happy with the purchase
+C0101,O0101-04,2026-01-05,205.31,1,205.31,Lighting,Retail,5.0,3.0,6,Fast delivery and helpful support
+C0101,O0101-05,2026-01-29,247.22,2,123.61,Lighting,Retail,3.0,4.0,8,Very happy with the purchase
+C0101,O0101-06,2026-07-23,298.62,3,99.54,Lighting,Retail,2.0,4.0,9,Fast delivery and helpful support
+C0102,O0102-01,2025-02-06,430.7,5,86.14,Home Decor,Email,5.0,1.0,9,Easy ordering experience
+C0103,O0103-01,2025-09-23,77.07,1,77.07,Storage,Retail,5.0,3.0,8,Easy ordering experience
+C0103,O0103-02,2025-10-06,260.13,3,86.71,Storage,Retail,5.0,5.0,7,Very happy with the purchase
+C0103,O0103-03,2025-12-01,873.64,2,436.82,Storage,Retail,4.0,2.0,8,
+C0103,O0103-04,2026-02-20,560.5,2,280.25,Storage,Retail,5.0,5.0,6,
+C0103,O0103-05,2026-02-22,283.97,1,283.97,Storage,Retail,4.0,5.0,8,Fast delivery and helpful support
+C0103,O0103-06,2026-06-25,598.86,2,299.43,Storage,Retail,4.0,5.0,5,Fast delivery and helpful support
+C0104,O0104-01,2025-06-21,118.76,1,118.76,Kitchenware,Online,5.0,3.0,6,Good packaging and quality
+C0104,O0104-02,2025-07-13,120.91,1,120.91,Kitchenware,Online,4.0,5.0,7,Delivery took too long
+C0104,O0104-03,2025-08-24,434.54,2,217.27,Kitchenware,Online,4.0,4.0,8,Very happy with the purchase
+C0104,O0104-04,2025-08-28,383.54,2,191.77,Kitchenware,Online,1.0,4.0,9,Would recommend to friends
+C0104,O0104-05,2025-11-06,249.21,1,249.21,Kitchenware,Online,4.0,3.0,6,Easy ordering experience
+C0104,O0104-06,2025-12-01,125.74,1,125.74,Kitchenware,Online,4.0,2.0,7,Fast delivery and helpful support
+C0104,O0104-07,2025-12-22,147.15,1,147.15,Kitchenware,Online,4.0,2.0,9,Very happy with the purchase
+C0104,O0104-08,2026-06-21,76.27,1,76.27,Kitchenware,Online,5.0,1.0,8,Would recommend to friends
+C0105,O0105-01,2025-07-04,152.82,1,152.82,Home Decor,Retail,4.0,3.0,5,Very happy with the purchase
+C0105,O0105-02,2025-11-03,228.64,2,114.32,Home Decor,Retail,2.0,3.0,6,Very happy with the purchase
+C0106,O0106-01,2025-07-21,316.62,2,158.31,Storage,Paid Search,4.0,4.0,9,Fast delivery and helpful support
+C0106,O0106-02,2025-10-12,242.03,1,242.03,Storage,Paid Search,5.0,,9,Easy ordering experience
+C0106,O0106-03,2025-11-03,324.79,1,324.79,Storage,Paid Search,4.0,4.0,9,Would recommend to friends
+C0106,O0106-04,2025-11-10,334.9,2,167.45,Storage,Paid Search,1.0,5.0,9,Price was high for the value
+C0106,O0106-05,2026-01-05,553.08,3,184.36,Storage,Paid Search,4.0,5.0,5,Fast delivery and helpful support
+C0106,O0106-06,2026-01-18,423.93,1,423.93,Storage,Paid Search,4.0,3.0,7,Good packaging and quality
+C0106,O0106-07,2026-04-18,,1,149.15,Storage,Paid Search,4.0,5.0,2,Price was high for the value
+C0107,O0107-01,2024-11-05,166.5,1,166.5,Storage,Retail,3.0,4.0,8,Price was high for the value
+C0107,O0107-02,2025-10-31,550.85,1,550.85,Storage,Retail,4.0,2.0,10,
+C0107,O0107-03,2026-02-06,492.88,4,123.22,Storage,Retail,3.0,3.0,9,Good packaging and quality
+C0107,O0107-04,2026-02-14,256.41,3,85.47,Storage,Retail,,3.0,10,
+C0108,O0108-01,2025-04-14,95.4,1,95.4,Home Decor,Online,4.0,5.0,10,Price was high for the value
+C0108,O0108-02,2025-08-22,177.43,1,177.43,Home Decor,Online,4.0,3.0,7,Very happy with the purchase
+C0108,O0108-03,2025-09-14,248.44,4,62.11,Home Decor,Online,3.0,1.0,9,Good packaging and quality
+C0108,O0108-04,2025-09-27,131.52,2,65.76,Home Decor,Online,5.0,4.0,6,
+C0108,O0108-05,2025-12-13,299.68,2,149.84,Home Decor,Online,4.0,3.0,8,Very happy with the purchase
+C0108,O0108-06,2026-04-10,714.24,3,238.08,Home Decor,Online,4.0,3.0,6,Very happy with the purchase
+C0108,O0108-07,2026-05-13,438.18,2,219.09,Home Decor,Online,4.0,4.0,5,Product quality could be better
+C0108,O0108-08,2026-08-08,497.26,2,248.63,Home Decor,Online,4.0,3.0,3,Delivery took too long
+C0109,O0109-01,2024-11-01,509.7,3,169.9,Kitchenware,Online,4.0,5.0,10,Fast delivery and helpful support
+C0109,O0109-02,2025-11-25,267.21,3,89.07,Kitchenware,Online,2.0,3.0,3,Price was high for the value
+C0109,O0109-03,2026-02-16,86.33,1,86.33,Kitchenware,Online,4.0,2.0,10,Easy ordering experience
+C0110,O0110-01,2025-06-30,421.16,2,210.58,Gift Set,Referral,3.0,5.0,10,Would recommend to friends
+C0110,O0110-02,2025-07-05,127.58,1,127.58,Gift Set,Referral,2.0,3.0,8,Easy ordering experience
+C0110,O0110-03,2025-12-08,266.78,1,266.78,Gift Set,Referral,2.0,4.0,6,Product quality could be better
+C0110,O0110-04,2026-01-08,72.62,1,72.62,Gift Set,Referral,5.0,5.0,10,Price was high for the value
+C0110,O0110-05,2026-01-15,305.82,2,152.91,Gift Set,Referral,1.0,2.0,10,Fast delivery and helpful support
+C0110,O0110-06,2026-02-03,74.31,1,74.31,Gift Set,Referral,5.0,2.0,9,
+C0110,O0110-07,2026-06-11,1411.16,4,352.79,Gift Set,Referral,4.0,2.0,4,Good packaging and quality
+C0111,O0111-01,2025-05-01,596.78,2,298.39,Glassware,Referral,4.0,4.0,7,Fast delivery and helpful support
+C0111,O0111-02,2025-05-11,219.92,1,219.92,Glassware,Referral,4.0,3.0,10,Price was high for the value
+C0111,O0111-03,2025-11-22,483.16,4,120.79,Glassware,Referral,5.0,,1,Fast delivery and helpful support
+C0111,O0111-04,2026-03-04,94.77,1,94.77,Glassware,Referral,4.0,2.0,4,Would recommend to friends
+C0111,O0111-05,2026-04-03,77.48,1,77.48,Glassware,Referral,5.0,4.0,7,Good packaging and quality
+C0111,O0111-06,2026-04-15,592.68,3,197.56,Glassware,Referral,4.0,3.0,7,Price was high for the value
+C0111,O0111-07,2026-06-14,1487.12,4,371.78,Glassware,Referral,4.0,1.0,7,Would recommend to friends
+C0112,O0112-01,2024-07-01,196.53,1,196.53,Kitchenware,Online,3.0,3.0,9,Would recommend to friends
+C0112,O0112-02,2024-08-19,892.7,5,178.54,Kitchenware,Online,4.0,1.0,9,Delivery took too long
+C0112,O0112-03,2025-02-12,379.97,1,379.97,Kitchenware,Online,5.0,5.0,7,Very happy with the purchase
+C0112,O0112-04,2025-03-28,285.72,2,142.86,Kitchenware,Online,1.0,5.0,7,Very happy with the purchase
+C0113,O0113-01,2024-08-12,62.84,1,62.84,Kitchenware,Paid Search,4.0,4.0,7,Product quality could be better
+C0113,O0113-02,2024-12-12,467.52,4,116.88,Kitchenware,Paid Search,4.0,4.0,9,Easy ordering experience
+C0113,O0113-03,2025-10-05,1170.75,5,234.15,Kitchenware,Paid Search,5.0,3.0,5,Delivery took too long
+C0113,O0113-04,2025-12-13,75.28,1,75.28,Kitchenware,Paid Search,5.0,5.0,8,Easy ordering experience
+C0113,O0113-05,2025-12-27,274.4,2,137.2,Kitchenware,Paid Search,3.0,1.0,8,Very happy with the purchase
+C0113,O0113-06,2026-01-27,125.19,1,125.19,Kitchenware,Paid Search,4.0,2.0,3,Easy ordering experience
+C0113,O0113-07,2026-05-31,617.04,2,308.52,Kitchenware,Paid Search,4.0,5.0,9,Very happy with the purchase
+C0114,O0114-01,2025-05-01,378.3,3,126.1,Lighting,Online,4.0,1.0,10,Easy ordering experience
+C0114,O0114-02,2025-05-10,229.24,1,229.24,Lighting,Online,5.0,3.0,3,Fast delivery and helpful support
+C0114,O0114-03,2026-05-21,196.05,1,196.05,Lighting,Online,2.0,2.0,3,Easy ordering experience
+C0115,O0115-01,2024-03-23,1050.1,2,525.05,Lighting,Paid Search,4.0,4.0,9,Support response was slow
+C0115,O0115-02,2024-06-10,74.18,1,74.18,Lighting,Paid Search,5.0,2.0,2,Support response was slow
+C0115,O0115-03,2025-06-28,193.56,2,96.78,Lighting,Paid Search,4.0,3.0,10,Fast delivery and helpful support
+C0115,O0115-04,2025-11-25,289.78,2,144.89,Lighting,Paid Search,4.0,3.0,6,Delivery took too long
+C0115,O0115-05,2026-01-29,510.9,5,102.18,Lighting,Paid Search,4.0,1.0,8,Easy ordering experience
+C0115,O0115-06,2026-02-18,600.92,2,300.46,Lighting,Paid Search,5.0,3.0,8,Very happy with the purchase
+C0115,O0115-07,2026-06-25,239.32,2,119.66,Lighting,Paid Search,5.0,2.0,9,
+C0116,O0116-01,2025-09-05,329.94,1,329.94,Lighting,Online,5.0,3.0,3,Easy ordering experience
+C0116,O0116-02,2025-09-14,1076.04,2,538.02,Lighting,Online,4.0,3.0,7,Fast delivery and helpful support
+C0116,O0116-03,2025-10-08,403.82,2,201.91,Lighting,Online,3.0,4.0,6,Delivery took too long
+C0116,O0116-04,2025-12-26,454.08,2,227.04,Lighting,Online,5.0,5.0,9,Easy ordering experience
+C0116,O0116-05,2026-01-07,349.8,1,349.8,Lighting,Online,4.0,1.0,7,Very happy with the purchase
+C0116,O0116-06,2026-01-07,666.96,3,222.32,Lighting,Online,5.0,5.0,8,Would recommend to friends
+C0116,O0116-07,2026-07-12,358.5,2,179.25,Lighting,Online,4.0,5.0,7,
+C0117,O0117-01,2025-08-27,390.06,2,195.03,Home Decor,Email,4.0,2.0,9,Fast delivery and helpful support
+C0117,O0117-02,2025-12-25,166.66,1,166.66,Home Decor,Email,3.0,,9,Very happy with the purchase
+C0117,O0117-03,2026-01-04,86.39,1,86.39,Home Decor,Email,5.0,4.0,6,
+C0117,O0117-04,2026-05-03,218.57,1,218.57,Home Decor,Email,3.0,3.0,8,Would recommend to friends
+C0118,O0118-01,2025-03-28,343.25,5,68.65,Storage,Retail,5.0,3.0,7,
+C0118,O0118-02,2025-05-16,35.48,1,35.48,Storage,Retail,5.0,4.0,6,Price was high for the value
+C0118,O0118-03,2025-08-10,302.64,2,151.32,Storage,Retail,2.0,5.0,8,Delivery took too long
+C0118,O0118-04,2025-09-13,309.66,3,103.22,Storage,Retail,4.0,2.0,8,Delivery took too long
+C0118,O0118-05,2026-05-19,156.15,1,156.15,Storage,Retail,5.0,4.0,10,Easy ordering experience
+C0118,O0118-06,2026-06-14,99.53,1,99.53,Storage,Retail,4.0,3.0,10,
+C0118,O0118-07,2026-09-26,942.45,5,188.49,Storage,Retail,5.0,1.0,9,Would recommend to friends
+C0119,O0119-01,2024-12-16,784.38,2,392.19,Glassware,Retail,3.0,4.0,8,Fast delivery and helpful support
+C0119,O0119-02,2025-01-30,137.16,2,68.58,Glassware,Retail,4.0,5.0,9,Would recommend to friends
+C0119,O0119-03,2025-02-22,142.34,2,71.17,Glassware,Retail,5.0,4.0,8,Fast delivery and helpful support
+C0119,O0119-04,2025-02-23,335.2,2,167.6,Glassware,Retail,3.0,5.0,10,Would recommend to friends
+C0119,O0119-05,2025-07-05,52.71,1,52.71,Glassware,Retail,1.0,2.0,7,Good packaging and quality
+C0119,O0119-06,2025-11-19,128.0,1,128.0,Glassware,Retail,5.0,4.0,10,Good packaging and quality
+C0120,O0120-01,2025-09-29,620.76,2,310.38,Kitchenware,Email,4.0,5.0,9,Support response was slow
+C0120,O0120-02,2025-11-10,135.31,1,135.31,Kitchenware,Email,2.0,5.0,8,Fast delivery and helpful support
+C0120,O0120-03,2025-12-03,485.8,2,242.9,Kitchenware,Email,5.0,5.0,7,Fast delivery and helpful support
+C0120,O0120-04,2025-12-07,224.36,1,224.36,Kitchenware,Email,5.0,2.0,9,Product quality could be better
+C0120,O0120-05,2025-12-27,144.12,1,144.12,Kitchenware,Email,5.0,5.0,8,Product quality could be better
+C0120,O0120-06,2025-12-29,161.62,1,161.62,Kitchenware,Email,5.0,5.0,10,Good packaging and quality
+C0120,O0120-07,2026-05-20,438.4,4,109.6,Kitchenware,Email,5.0,1.0,10,Very happy with the purchase
+C0121,O0121-01,2025-05-15,56.09,1,56.09,Home Decor,Paid Search,5.0,1.0,9,Fast delivery and helpful support
+C0121,O0121-02,2025-05-21,302.16,2,151.08,Home Decor,Paid Search,4.0,4.0,9,Would recommend to friends
+C0121,O0121-03,2025-09-25,27.76,1,27.76,Home Decor,Paid Search,5.0,4.0,7,Very happy with the purchase
+C0121,O0121-04,2025-10-03,201.78,1,201.78,Home Decor,Paid Search,4.0,3.0,8,Delivery took too long
+C0121,O0121-05,2025-11-22,65.14,1,65.14,Home Decor,Paid Search,1.0,4.0,9,Product quality could be better
+C0121,O0121-06,2025-11-25,226.37,1,226.37,Home Decor,Paid Search,3.0,2.0,7,Easy ordering experience
+C0121,O0121-07,2026-03-29,375.9,1,375.9,Home Decor,Paid Search,3.0,4.0,9,Fast delivery and helpful support
+C0122,O0122-01,2025-06-01,85.82,1,85.82,Kitchenware,Retail,4.0,3.0,7,Easy ordering experience
+C0122,O0122-02,2025-06-29,591.12,4,147.78,Kitchenware,Retail,3.0,4.0,4,Very happy with the purchase
+C0122,O0122-03,2025-10-13,169.8,2,84.9,Kitchenware,Retail,3.0,3.0,8,Very happy with the purchase
+C0122,O0122-04,2026-02-19,282.7,2,141.35,Kitchenware,Retail,4.0,4.0,10,Very happy with the purchase
+C0122,O0122-05,2026-04-02,58.91,1,58.91,Kitchenware,Retail,5.0,3.0,3,Very happy with the purchase
+C0123,O0123-01,2025-04-09,1115.48,4,278.87,Lighting,Paid Search,5.0,2.0,10,Price was high for the value
+C0123,O0123-02,2025-10-19,288.9,3,96.3,Lighting,Paid Search,4.0,5.0,8,Fast delivery and helpful support
+C0123,O0123-03,2025-11-25,82.61,1,82.61,Lighting,Paid Search,,5.0,10,Very happy with the purchase
+C0123,O0123-04,2025-12-02,111.12,1,111.12,Lighting,Paid Search,5.0,5.0,9,Fast delivery and helpful support
+C0123,O0123-05,2026-03-12,332.91,3,110.97,Lighting,Paid Search,5.0,5.0,6,
+C0123,O0123-06,2026-04-15,55.27,1,55.27,Lighting,Paid Search,4.0,5.0,9,Product quality could be better
+C0124,O0124-01,2025-01-03,200.8,2,100.4,Home Decor,Referral,5.0,3.0,0,
+C0124,O0124-02,2025-04-23,110.13,1,110.13,Home Decor,Referral,4.0,4.0,1,Good packaging and quality
+C0124,O0124-03,2025-08-26,202.16,2,101.08,Home Decor,Referral,4.0,4.0,7,Support response was slow
+C0124,O0124-04,2025-11-02,523.02,3,174.34,Home Decor,Referral,4.0,5.0,8,Product quality could be better
+C0124,O0124-05,2026-05-08,101.92,1,101.92,Home Decor,Referral,2.0,4.0,3,Support response was slow
+C0124,O0124-06,2026-06-15,91.0,1,91.0,Home Decor,Referral,3.0,5.0,7,Very happy with the purchase
+C0124,O0124-07,2026-08-11,108.45,1,108.45,Home Decor,Referral,5.0,5.0,8,Very happy with the purchase
+C0124,O0124-08,2026-08-14,323.96,2,161.98,Home Decor,Referral,3.0,5.0,7,Delivery took too long
+C0125,O0125-01,2025-06-18,173.41,1,173.41,Kitchenware,Retail,2.0,5.0,8,Very happy with the purchase
+C0125,O0125-02,2025-11-24,72.33,1,72.33,Kitchenware,Retail,,3.0,8,Delivery took too long
+C0125,O0125-03,2026-06-08,126.99,1,126.99,Kitchenware,Retail,5.0,4.0,8,Support response was slow
+C0126,O0126-01,2025-06-13,90.25,1,90.25,Lighting,Email,4.0,4.0,10,Easy ordering experience
+C0126,O0126-02,2025-08-29,530.52,2,265.26,Lighting,Email,5.0,4.0,9,Very happy with the purchase
+C0127,O0127-01,2025-08-16,1891.78,2,945.89,Home Decor,Online,3.0,5.0,8,Delivery took too long
+C0127,O0127-02,2025-10-14,213.65,1,213.65,Home Decor,Online,2.0,3.0,8,Delivery took too long
+C0127,O0127-03,2025-12-16,351.22,1,351.22,Home Decor,Online,4.0,4.0,7,Fast delivery and helpful support
+C0128,O0128-01,2025-05-28,105.1,1,105.1,Lighting,Retail,4.0,4.0,4,Very happy with the purchase
+C0128,O0128-02,2025-06-17,309.6,2,154.8,Lighting,Retail,3.0,3.0,5,Support response was slow
+C0129,O0129-01,2025-11-02,140.48,1,140.48,Glassware,Retail,1.0,5.0,7,Very happy with the purchase
+C0129,O0129-02,2026-01-08,1352.15,5,270.43,Glassware,Retail,4.0,2.0,8,Easy ordering experience
+C0129,O0129-03,2026-06-04,103.64,1,103.64,Glassware,Retail,4.0,5.0,9,Good packaging and quality
+C0129,O0129-04,2026-07-17,1785.4,5,357.08,Glassware,Retail,3.0,2.0,6,Fast delivery and helpful support
+C0130,O0130-01,2025-04-23,62.85,1,62.85,Glassware,Paid Search,4.0,2.0,10,Support response was slow
+C0130,O0130-02,2025-04-26,381.33,3,127.11,Glassware,Paid Search,3.0,3.0,6,Fast delivery and helpful support
+C0131,O0131-01,2025-05-17,199.71,1,199.71,Gift Set,Referral,4.0,5.0,10,Easy ordering experience
+C0131,O0131-02,2026-02-27,202.32,1,202.32,Gift Set,Referral,5.0,2.0,0,Price was high for the value
+C0131,O0131-03,2026-04-08,502.2,4,125.55,Gift Set,Referral,3.0,4.0,0,Good packaging and quality
+C0131,O0131-04,2026-09-08,47.17,1,47.17,Gift Set,Referral,2.0,2.0,5,Easy ordering experience
+C0132,O0132-01,2026-04-21,424.5,2,212.25,Gift Set,Paid Search,3.0,2.0,5,Good packaging and quality
+C0133,O0133-01,2024-04-20,134.7,2,67.35,Storage,Email,,4.0,3,Support response was slow
+C0133,O0133-02,2024-06-16,273.96,1,273.96,Storage,Email,4.0,4.0,9,Would recommend to friends
+C0133,O0133-03,2024-07-23,167.7,1,167.7,Storage,Email,5.0,2.0,8,Product quality could be better
+C0133,O0133-04,2024-09-02,898.16,2,449.08,Storage,Email,3.0,,8,Delivery took too long
+C0133,O0133-05,2024-12-22,192.17,1,192.17,Storage,Email,3.0,4.0,10,Support response was slow
+C0133,O0133-06,2025-05-23,342.34,2,171.17,Storage,Email,4.0,3.0,7,Easy ordering experience
+C0133,O0133-07,2025-07-05,270.72,1,270.72,Storage,Email,3.0,5.0,5,
+C0133,O0133-08,2025-07-18,129.14,1,129.14,Storage,Email,1.0,5.0,9,
+C0134,O0134-01,2025-01-18,325.18,2,162.59,Glassware,Referral,4.0,4.0,10,Support response was slow
+C0134,O0134-02,2025-09-27,150.58,1,150.58,Glassware,Referral,2.0,3.0,5,Price was high for the value
+C0134,O0134-03,2025-11-29,111.58,1,111.58,Glassware,Referral,1.0,2.0,7,Good packaging and quality
+C0134,O0134-04,2026-04-25,2148.6,4,537.15,Glassware,Referral,4.0,5.0,7,Delivery took too long
+C0134,O0134-05,2026-09-12,89.5,1,89.5,Glassware,Referral,2.0,5.0,9,Very happy with the purchase
+C0135,O0135-01,2025-05-25,160.18,2,80.09,Kitchenware,Paid Search,4.0,4.0,8,Fast delivery and helpful support
+C0135,O0135-02,2025-08-15,365.16,4,91.29,Kitchenware,Paid Search,3.0,3.0,9,Very happy with the purchase
+C0135,O0135-03,2025-08-27,253.45,1,253.45,Kitchenware,Paid Search,4.0,1.0,9,Easy ordering experience
+C0135,O0135-04,2026-01-09,920.43,3,306.81,Kitchenware,Paid Search,4.0,4.0,0,Delivery took too long
+C0135,O0135-05,2026-01-15,211.5,1,211.5,Kitchenware,Paid Search,5.0,5.0,9,Good packaging and quality
+C0135,O0135-06,2026-02-16,78.22,1,78.22,Kitchenware,Paid Search,4.0,4.0,4,Easy ordering experience
+C0135,O0135-07,2026-03-11,487.22,2,243.61,Kitchenware,Paid Search,5.0,2.0,8,Easy ordering experience
+C0135,O0135-08,2026-03-20,648.68,2,324.34,Kitchenware,Paid Search,2.0,1.0,9,Easy ordering experience
+C0136,O0136-01,2025-01-28,225.2,2,112.6,Storage,Retail,5.0,5.0,9,Easy ordering experience
+C0137,O0137-01,2025-07-07,330.04,2,165.02,Home Decor,Online,4.0,4.0,10,Would recommend to friends
+C0137,O0137-02,2025-07-21,143.42,1,143.42,Home Decor,Online,3.0,4.0,6,Delivery took too long
+C0137,O0137-03,2025-08-03,87.27,1,87.27,Home Decor,Online,4.0,5.0,10,Product quality could be better
+C0137,O0137-04,2025-08-07,105.54,2,52.77,Home Decor,Online,5.0,3.0,7,Price was high for the value
+C0137,O0137-05,2026-06-24,570.03,3,190.01,Home Decor,Online,,5.0,7,Delivery took too long
+C0138,O0138-01,2024-07-08,242.4,4,60.6,Gift Set,Referral,5.0,5.0,10,Product quality could be better
+C0138,O0138-02,2025-04-22,870.55,5,174.11,Gift Set,Referral,5.0,4.0,6,Fast delivery and helpful support
+C0138,O0138-03,2025-05-05,189.15,1,189.15,Gift Set,Referral,5.0,5.0,9,Delivery took too long
+C0138,O0138-04,2026-07-05,85.87,1,85.87,Gift Set,Referral,2.0,5.0,5,
+C0139,O0139-01,2025-05-02,384.48,3,128.16,Storage,Email,5.0,4.0,2,Support response was slow
+C0139,O0139-02,2025-10-19,223.28,1,223.28,Storage,Email,5.0,4.0,8,Very happy with the purchase
+C0140,O0140-01,2024-08-03,155.07,3,51.69,Gift Set,Retail,2.0,3.0,8,Product quality could be better
+C0140,O0140-02,2024-08-13,149.96,2,74.98,Gift Set,Retail,3.0,1.0,7,Fast delivery and helpful support
+C0140,O0140-03,2024-10-27,719.96,4,179.99,Gift Set,Retail,4.0,4.0,8,Fast delivery and helpful support
+C0140,O0140-04,2025-01-26,557.98,2,278.99,Gift Set,Retail,5.0,4.0,8,Very happy with the purchase
+C0003,O0003-05,2026-07-20,132.97,1,132.97,Gift Set,Online,3.0,3.0,7,Fast delivery and helpful support

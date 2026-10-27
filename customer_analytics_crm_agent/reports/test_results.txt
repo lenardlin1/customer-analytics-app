@@ -1,0 +1,6 @@
+Customer Analytics & CRM Intelligence Agent — test evidence
+Validation date: 2026-10-27
+Python syntax compilation: passed
+Command: PYTHONPATH=src python -m pytest -q
+Result: 80 passed in 3.44s (includes 7 new tests for dataset-driven analysis defaults)
+Scope: automated Python unit/regression and export validation. Streamlit browser UI, live CRM APIs and optional OpenAI API were not tested in this runtime.

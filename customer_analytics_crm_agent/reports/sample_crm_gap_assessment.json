@@ -1,0 +1,66 @@
+{
+  "assessment_date": "2026-10-27",
+  "platform": "HubSpot",
+  "capability": "Customer health / churn prediction",
+  "business_requirement": "Prioritize at-risk customer retention follow-ups",
+  "evidence_record": {
+    "record_id": "cap-hubspot-health_churn",
+    "platform": "HubSpot",
+    "feature_id": "health_churn",
+    "capability_name": "Customer health / churn prediction",
+    "category": "Retention intelligence",
+    "description": "Customer health scores can evaluate contacts/companies using chosen properties and tracked event activity.",
+    "availability_status": "available_plan_restrictions",
+    "plan_scope": "Service Hub Professional or Enterprise; permissions also apply (as documented 2026-06-15)",
+    "implementation_type": "Native capability",
+    "limitations": "Health scoring is user-configured and does not prove validated churn prediction.",
+    "required_data": [],
+    "evidence_url": "https://knowledge.hubspot.com/help-desk/customize-a-health-score-in-the-customer-success-workspace",
+    "evidence_note": "Official Knowledge Base names Service Hub Professional/Enterprise and the required management permission.",
+    "verification_status": "verified",
+    "verification_date": "2026-10-27",
+    "evidence_confidence": 4,
+    "keywords": [
+      "churn",
+      "retention",
+      "customer health",
+      "risk score",
+      "inactive"
+    ],
+    "last_updated": "2026-10-27"
+  },
+  "assessment": {
+    "gap_type": "Subscription/cost constraint",
+    "description": "Confirm the subscribed edition, limits, add-ons and seat entitlements before making a cost or availability claim.",
+    "confirmed_finding": false,
+    "priority_score": 76,
+    "priority": "High",
+    "evidence_confidence": "High documentation confidence",
+    "assessed_on": "2026-10-27",
+    "affected_stakeholder": "CRM administrator / Procurement / Functional owner",
+    "root_cause_hypothesis": "Confirm the subscribed edition, limits, add-ons and seat entitlements before making a cost or availability claim.",
+    "proposed_improvement": [
+      "Confirm current product, edition, region, seats, add-ons, usage quotas and renewal terms.",
+      "Compare configuring the existing plan, buying an add-on, integrating a tool or building a workflow.",
+      "Estimate total cost of ownership using actual vendor quotes and internal effort."
+    ],
+    "recommended_automation": "Do not build a workaround before confirming whether the capability is already licensed.",
+    "recommended_integration": "Consider only after native entitlement and configuration are checked.",
+    "implementation_complexity": "Low for entitlement check; financial impact requires quote and usage context",
+    "expected_business_benefits": "Avoids paying for duplicate functionality and supports a defensible buy/configure/build choice.",
+    "kpis_to_monitor": [
+      "Incremental subscription cost",
+      "Feature adoption rate",
+      "Implementation and maintenance effort",
+      "Cost per completed workflow"
+    ],
+    "risks_and_limitations": [
+      "Plan names and entitlements change; undocumented assumptions can invalidate a comparison.",
+      "Vendor list price may differ from contracted pricing."
+    ],
+    "measurement_plan": "Record a pre-intervention baseline using the same population, metric definition and time window. After the pilot, compare a like-for-like period or a suitable holdout; disclose seasonality and other changes. No impact percentage is assumed.",
+    "recommended_next_step": "Validate the actual plan, configuration, data mapping and workflow against the linked source before implementation."
+  },
+  "synthetic_demo": true,
+  "warning": "Illustrative assessment from published feature evidence; not an audit of a live customer tenant."
+}

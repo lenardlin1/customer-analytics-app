@@ -1,0 +1,219 @@
+{
+  "synthetic_data": true,
+  "summary": "Evaluated logistic regression and random forest on 320 unique customers with an explicit churn target; stratified holdout test size was 80 (25.0%). Positive class: 'Churn'. Best holdout ROC AUC: 0.771 (Logistic Regression).",
+  "metrics": [
+    {
+      "Model": "Logistic Regression",
+      "Customers (total)": 320,
+      "Train customers": 240,
+      "Test customers": 80,
+      "Accuracy": 0.575,
+      "Balanced accuracy": 0.6166666666666667,
+      "Precision (positive class)": 0.3333333333333333,
+      "Recall (positive class)": 0.7,
+      "F1 (positive class)": 0.45161290322580644,
+      "ROC AUC": 0.7708333333333333
+    },
+    {
+      "Model": "Random Forest",
+      "Customers (total)": 320,
+      "Train customers": 240,
+      "Test customers": 80,
+      "Accuracy": 0.675,
+      "Balanced accuracy": 0.6,
+      "Precision (positive class)": 0.375,
+      "Recall (positive class)": 0.45,
+      "F1 (positive class)": 0.4090909090909091,
+      "ROC AUC": 0.7208333333333333
+    }
+  ],
+  "interpretation": {
+    "analysis": "Predictive Churn Model Evaluation",
+    "overview": "This section evaluates predictive churn model evaluation using the mapped fields and available records.",
+    "key_findings": [
+      "The analysis was run on an analysis dataset containing 320 row(s); the metric-specific usable denominator may be smaller because of missing or invalid values.",
+      "Evaluated logistic regression and random forest on 320 unique customers with an explicit churn target; stratified holdout test size was 80 (25.0%). Positive class: 'Churn'. Best holdout ROC AUC: 0.771 (Logistic Regression).",
+      "Highest held-out ROC AUC: 0.771 for Logistic Regression; this ranks discrimination on this sample, not real-world usefulness by itself.",
+      "Logistic Regression positive-class recall: 70.0%; proportion of observed positive cases detected in the holdout at the tested threshold.",
+      "Random Forest positive-class recall: 45.0%; proportion of observed positive cases detected in the holdout at the tested threshold.",
+      "Computed table ranges: Customers (total): min 320, max 320 across 2 usable value(s); Train customers: min 240, max 240 across 2 usable value(s); Test customers: min 80, max 80 across 2 usable value(s); Accuracy: min 0.575, max 0.675 across 2 usable value(s)."
+    ],
+    "business_implications": "The model comparison estimates how well selected pre-outcome customer attributes separate the explicitly defined churn class from the other observed class on a held-out sample. Use recall/precision and the costs of missed churn versus unnecessary outreach to choose an operating threshold; the default 0.5 threshold is not necessarily appropriate.",
+    "root_cause_assessment": "The output is descriptive unless the method explicitly reports a validated inferential or predictive result. Any proposed explanation of why the pattern occurred is a hypothesis to investigate, not a proven cause.",
+    "recommendations": [
+      "Compare ROC AUC, balanced accuracy, recall and precision against a simple baseline and the cost of each error before selecting a model.",
+      "Review the holdout confusion matrix and the top features for data leakage, stability and business plausibility.",
+      "Before deployment, validate on a later time period, calibrate risk scores if probability estimates are required, and pilot a human-reviewed retention queue."
+    ],
+    "kpis": [
+      "Holdout ROC AUC and balanced accuracy",
+      "Recall and precision for the defined churn class",
+      "False-positive outreach cost and missed-churn cost",
+      "Model drift and calibration on a later period",
+      "Incremental retention versus a suitable holdout"
+    ],
+    "limitations": [
+      "This is an exploratory random holdout result, not a calibrated production probability or causal retention effect. Results can be optimistic if selected features contain post-outcome information or if a random split leaks time patterns.",
+      "Exploratory holdout estimates, not a validated production churn model or calibrated probability of churn. Selected predictors are aggregated to customer level (numeric mean; categorical mode); this is defensible only if all predictors precede the churn window. Use time-based validation for deployment, check leakage, drift, calibration, subgroup performance and intervention capacity. Precision/recall depend on the selected positive class and threshold; a high score does not prove a customer will churn."
+    ],
+    "evidence_status": "Computed result + conservative rule-based interpretation; causal claims not inferred."
+  },
+  "feature_importance": [
+    {
+      "Model": "Logistic Regression",
+      "Feature": "numeric__Tenure_Months",
+      "Importance / coefficient": -1.062324479925701,
+      "Absolute magnitude": 1.062324479925701,
+      "Interpretation": "Positive/negative association with the model's positive class; not causal."
+    },
+    {
+      "Model": "Logistic Regression",
+      "Feature": "categorical__Contract_Type_Monthly",
+      "Importance / coefficient": 0.722887283062927,
+      "Absolute magnitude": 0.722887283062927,
+      "Interpretation": "Positive/negative association with the model's positive class; not causal."
+    },
+    {
+      "Model": "Logistic Regression",
+      "Feature": "categorical__Acquisition_Channel_Paid Social",
+      "Importance / coefficient": 0.527816687091724,
+      "Absolute magnitude": 0.527816687091724,
+      "Interpretation": "Positive/negative association with the model's positive class; not causal."
+    },
+    {
+      "Model": "Logistic Regression",
+      "Feature": "categorical__Contract_Type_Prepaid",
+      "Importance / coefficient": -0.3796932950384423,
+      "Absolute magnitude": 0.3796932950384423,
+      "Interpretation": "Positive/negative association with the model's positive class; not causal."
+    },
+    {
+      "Model": "Logistic Regression",
+      "Feature": "categorical__Acquisition_Channel_Referral",
+      "Importance / coefficient": -0.3538697043745488,
+      "Absolute magnitude": 0.3538697043745488,
+      "Interpretation": "Positive/negative association with the model's positive class; not causal."
+    },
+    {
+      "Model": "Logistic Regression",
+      "Feature": "categorical__Contract_Type_Annual",
+      "Importance / coefficient": -0.34259983216595075,
+      "Absolute magnitude": 0.34259983216595075,
+      "Interpretation": "Positive/negative association with the model's positive class; not causal."
+    },
+    {
+      "Model": "Logistic Regression",
+      "Feature": "numeric__Engagement_Score",
+      "Importance / coefficient": -0.33840680556860503,
+      "Absolute magnitude": 0.33840680556860503,
+      "Interpretation": "Positive/negative association with the model's positive class; not causal."
+    },
+    {
+      "Model": "Logistic Regression",
+      "Feature": "numeric__Monthly_Spend",
+      "Importance / coefficient": -0.2227744169310577,
+      "Absolute magnitude": 0.2227744169310577,
+      "Interpretation": "Positive/negative association with the model's positive class; not causal."
+    },
+    {
+      "Model": "Logistic Regression",
+      "Feature": "numeric__Support_Tickets_90d",
+      "Importance / coefficient": 0.2185731986285698,
+      "Absolute magnitude": 0.2185731986285698,
+      "Interpretation": "Positive/negative association with the model's positive class; not causal."
+    },
+    {
+      "Model": "Logistic Regression",
+      "Feature": "categorical__Acquisition_Channel_Partner",
+      "Importance / coefficient": -0.1762336865785432,
+      "Absolute magnitude": 0.1762336865785432,
+      "Interpretation": "Positive/negative association with the model's positive class; not causal."
+    },
+    {
+      "Model": "Logistic Regression",
+      "Feature": "categorical__Acquisition_Channel_Organic",
+      "Importance / coefficient": 0.002880859719900958,
+      "Absolute magnitude": 0.002880859719900958,
+      "Interpretation": "Positive/negative association with the model's positive class; not causal."
+    },
+    {
+      "Model": "Random Forest",
+      "Feature": "numeric__Tenure_Months",
+      "Importance / coefficient": 0.3506945911388079,
+      "Absolute magnitude": 0.3506945911388079,
+      "Interpretation": "Split-based importance; not causal."
+    },
+    {
+      "Model": "Random Forest",
+      "Feature": "numeric__Engagement_Score",
+      "Importance / coefficient": 0.19806149580531965,
+      "Absolute magnitude": 0.19806149580531965,
+      "Interpretation": "Split-based importance; not causal."
+    },
+    {
+      "Model": "Random Forest",
+      "Feature": "numeric__Monthly_Spend",
+      "Importance / coefficient": 0.1872602658684147,
+      "Absolute magnitude": 0.1872602658684147,
+      "Interpretation": "Split-based importance; not causal."
+    },
+    {
+      "Model": "Random Forest",
+      "Feature": "numeric__Support_Tickets_90d",
+      "Importance / coefficient": 0.08376978262216957,
+      "Absolute magnitude": 0.08376978262216957,
+      "Interpretation": "Split-based importance; not causal."
+    },
+    {
+      "Model": "Random Forest",
+      "Feature": "categorical__Contract_Type_Monthly",
+      "Importance / coefficient": 0.04309252659237412,
+      "Absolute magnitude": 0.04309252659237412,
+      "Interpretation": "Split-based importance; not causal."
+    },
+    {
+      "Model": "Random Forest",
+      "Feature": "categorical__Contract_Type_Annual",
+      "Importance / coefficient": 0.031212193937452205,
+      "Absolute magnitude": 0.031212193937452205,
+      "Interpretation": "Split-based importance; not causal."
+    },
+    {
+      "Model": "Random Forest",
+      "Feature": "categorical__Acquisition_Channel_Paid Social",
+      "Importance / coefficient": 0.03069625711880438,
+      "Absolute magnitude": 0.03069625711880438,
+      "Interpretation": "Split-based importance; not causal."
+    },
+    {
+      "Model": "Random Forest",
+      "Feature": "categorical__Acquisition_Channel_Referral",
+      "Importance / coefficient": 0.024850414141302676,
+      "Absolute magnitude": 0.024850414141302676,
+      "Interpretation": "Split-based importance; not causal."
+    },
+    {
+      "Model": "Random Forest",
+      "Feature": "categorical__Acquisition_Channel_Organic",
+      "Importance / coefficient": 0.01990373245371978,
+      "Absolute magnitude": 0.01990373245371978,
+      "Interpretation": "Split-based importance; not causal."
+    },
+    {
+      "Model": "Random Forest",
+      "Feature": "categorical__Contract_Type_Prepaid",
+      "Importance / coefficient": 0.016711001068774753,
+      "Absolute magnitude": 0.016711001068774753,
+      "Interpretation": "Split-based importance; not causal."
+    },
+    {
+      "Model": "Random Forest",
+      "Feature": "categorical__Acquisition_Channel_Partner",
+      "Importance / coefficient": 0.01374773925286021,
+      "Absolute magnitude": 0.01374773925286021,
+      "Interpretation": "Split-based importance; not causal."
+    }
+  ],
+  "holdout_prediction_rows": 80,
+  "note": "Exploratory holdout estimates, not a validated production churn model or calibrated probability of churn. Selected predictors are aggregated to customer level (numeric mean; categorical mode); this is defensible only if all predictors precede the churn window. Use time-based validation for deployment, check leakage, drift, calibration, subgroup performance and intervention capacity. Precision/recall depend on the selected positive class and threshold; a high score does not prove a customer will churn."
+}

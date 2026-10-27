@@ -1,0 +1,321 @@
+Customer_ID,Tenure_Months,Monthly_Spend,Engagement_Score,Support_Tickets_90d,Contract_Type,Acquisition_Channel,Churn_Within_Next_90_Days
+SYN0001,15,411.22,45.4,0,Monthly,Paid Social,Churn
+SYN0002,8,139.51,53.3,3,Prepaid,Referral,Churn
+SYN0003,9,442.11,67.5,3,Annual,Paid Social,Churn
+SYN0004,65,490.27,77.1,2,Prepaid,Paid Social,Retained
+SYN0005,30,391.42,84.2,0,Annual,Partner,Retained
+SYN0006,61,326.29,59.0,2,Prepaid,Paid Social,Retained
+SYN0007,55,491.49,92.5,5,Prepaid,Paid Social,Retained
+SYN0008,23,320.03,56.5,1,Monthly,Partner,Churn
+SYN0009,23,337.38,69.9,1,Annual,Organic,Churn
+SYN0010,54,533.91,65.8,1,Annual,Referral,Retained
+SYN0011,51,854.02,53.5,2,Annual,Referral,Retained
+SYN0012,71,341.19,47.3,1,Annual,Referral,Retained
+SYN0013,57,549.62,35.6,2,Annual,Paid Social,Retained
+SYN0014,19,258.96,19.1,0,Prepaid,Paid Social,Churn
+SYN0015,31,447.64,61.1,0,Monthly,Organic,Retained
+SYN0016,2,209.7,48.4,2,Monthly,Organic,Retained
+SYN0017,7,165.64,65.7,2,Monthly,Organic,Retained
+SYN0018,52,428.54,43.4,3,Annual,Paid Social,Churn
+SYN0019,58,581.56,80.6,2,Monthly,Referral,Retained
+SYN0020,50,282.11,8.7,2,Monthly,Organic,Churn
+SYN0021,27,312.17,36.9,1,Annual,Paid Social,Retained
+SYN0022,10,369.11,64.3,2,Prepaid,Referral,Retained
+SYN0023,36,229.01,44.6,2,Annual,Referral,Churn
+SYN0024,37,362.27,100.0,0,Monthly,Organic,Churn
+SYN0025,38,643.15,67.5,4,Annual,Referral,Retained
+SYN0026,22,176.82,43.3,0,Monthly,Paid Social,Retained
+SYN0027,35,709.4,61.9,0,Prepaid,Paid Social,Retained
+SYN0028,6,964.69,44.0,0,Monthly,Referral,Retained
+SYN0029,27,537.26,81.9,1,Monthly,Paid Social,Retained
+SYN0030,5,449.54,67.7,0,Monthly,Paid Social,Retained
+SYN0031,31,314.3,30.3,2,Annual,Organic,Retained
+SYN0032,54,241.83,100.0,2,Monthly,Paid Social,Retained
+SYN0033,28,656.42,69.9,3,Prepaid,Organic,Retained
+SYN0034,68,294.59,70.2,0,Monthly,Paid Social,Retained
+SYN0035,16,328.89,85.4,5,Monthly,Paid Social,Churn
+SYN0036,41,666.39,38.3,1,Monthly,Referral,Retained
+SYN0037,34,212.23,70.5,2,Prepaid,Referral,Retained
+SYN0038,25,127.73,58.1,0,Annual,Referral,Retained
+SYN0039,65,226.68,34.8,0,Annual,Referral,Churn
+SYN0040,55,415.01,78.8,0,Monthly,Paid Social,Churn
+SYN0041,62,297.3,55.6,2,Monthly,Paid Social,Retained
+SYN0042,29,262.36,68.2,0,Monthly,Partner,Retained
+SYN0043,40,782.94,80.9,2,Monthly,Referral,Retained
+SYN0044,69,641.66,91.5,3,Annual,Paid Social,Churn
+SYN0045,29,486.92,66.4,1,Monthly,Paid Social,Retained
+SYN0046,70,406.39,46.3,1,Monthly,Organic,Retained
+SYN0047,2,322.09,88.1,2,Annual,Paid Social,Churn
+SYN0048,31,146.72,62.0,2,Annual,Organic,Retained
+SYN0049,63,242.36,40.3,2,Monthly,Paid Social,Retained
+SYN0050,41,371.05,73.3,2,Monthly,Paid Social,Retained
+SYN0051,21,265.14,85.9,3,Annual,Organic,Churn
+SYN0052,56,894.83,82.1,4,Annual,Referral,Retained
+SYN0053,64,402.3,41.4,1,Monthly,Organic,Retained
+SYN0054,20,264.38,43.9,1,Monthly,Referral,Retained
+SYN0055,4,264.64,58.8,2,Monthly,Referral,Churn
+SYN0056,68,532.16,56.8,2,Monthly,Paid Social,Retained
+SYN0057,36,202.53,100.0,1,Annual,Partner,Retained
+SYN0058,50,968.71,50.5,2,Annual,Referral,Retained
+SYN0059,51,184.56,35.5,2,Annual,Referral,Retained
+SYN0060,64,423.06,56.3,3,Monthly,Paid Social,Retained
+SYN0061,44,493.26,68.5,0,Annual,Paid Social,Retained
+SYN0062,38,420.74,54.2,3,Prepaid,Referral,Retained
+SYN0063,11,457.1,68.2,2,Monthly,Organic,Retained
+SYN0064,30,126.78,47.7,3,Monthly,Organic,Retained
+SYN0065,60,425.26,52.2,1,Monthly,Organic,Retained
+SYN0066,17,712.11,86.0,4,Prepaid,Paid Social,Retained
+SYN0067,71,274.9,84.8,3,Monthly,Organic,Retained
+SYN0068,33,238.65,33.4,2,Annual,Paid Social,Retained
+SYN0069,29,771.73,65.7,2,Monthly,Partner,Retained
+SYN0070,29,609.96,57.9,3,Monthly,Referral,Retained
+SYN0071,35,552.38,58.0,1,Annual,Paid Social,Retained
+SYN0072,33,459.46,62.7,0,Prepaid,Organic,Retained
+SYN0073,26,607.01,95.9,0,Monthly,Referral,Retained
+SYN0074,53,440.17,32.3,3,Monthly,Paid Social,Churn
+SYN0075,14,329.46,81.1,2,Annual,Partner,Churn
+SYN0076,70,125.91,37.6,2,Annual,Paid Social,Retained
+SYN0077,35,205.46,41.4,1,Monthly,Partner,Retained
+SYN0078,19,404.85,84.0,3,Monthly,Partner,Churn
+SYN0079,20,371.84,41.4,3,Annual,Partner,Retained
+SYN0080,16,489.52,82.9,2,Monthly,Paid Social,Churn
+SYN0081,55,319.52,68.9,1,Annual,Paid Social,Churn
+SYN0082,1,151.43,73.2,1,Monthly,Paid Social,Churn
+SYN0083,34,307.03,44.1,1,Monthly,Paid Social,Retained
+SYN0084,4,310.75,86.8,1,Monthly,Referral,Retained
+SYN0085,14,572.54,96.2,1,Annual,Referral,Retained
+SYN0086,49,159.85,41.6,0,Monthly,Paid Social,Churn
+SYN0087,35,65.99,36.6,2,Prepaid,Paid Social,Churn
+SYN0088,49,261.72,51.4,0,Monthly,Paid Social,Retained
+SYN0089,70,576.32,36.4,3,Prepaid,Partner,Retained
+SYN0090,64,256.79,62.8,1,Annual,Paid Social,Retained
+SYN0091,18,306.93,66.8,3,Monthly,Referral,Churn
+SYN0092,56,148.05,66.4,0,Annual,Referral,Retained
+SYN0093,2,411.46,42.6,2,Annual,Organic,Retained
+SYN0094,6,178.55,47.4,2,Prepaid,Paid Social,Churn
+SYN0095,39,103.15,63.5,2,Monthly,Partner,Retained
+SYN0096,24,1103.24,48.8,0,Prepaid,Organic,Retained
+SYN0097,59,274.84,98.7,1,Monthly,Partner,Retained
+SYN0098,54,387.25,76.7,3,Annual,Referral,Retained
+SYN0099,6,361.1,64.4,2,Prepaid,Organic,Churn
+SYN0100,50,348.99,49.3,3,Monthly,Organic,Churn
+SYN0101,44,280.16,52.5,2,Monthly,Referral,Retained
+SYN0102,39,185.47,99.3,3,Monthly,Referral,Retained
+SYN0103,2,819.63,68.2,1,Monthly,Organic,Churn
+SYN0104,70,812.48,59.6,2,Monthly,Referral,Retained
+SYN0105,6,308.02,59.0,4,Monthly,Referral,Churn
+SYN0106,52,263.06,75.0,1,Annual,Organic,Retained
+SYN0107,63,628.87,86.2,3,Annual,Referral,Retained
+SYN0108,39,311.36,44.6,1,Monthly,Partner,Retained
+SYN0109,35,209.05,52.0,1,Annual,Partner,Retained
+SYN0110,57,235.5,34.9,3,Monthly,Organic,Retained
+SYN0111,29,231.08,60.1,0,Annual,Organic,Retained
+SYN0112,48,413.55,48.5,1,Monthly,Organic,Churn
+SYN0113,9,218.07,97.8,0,Monthly,Organic,Churn
+SYN0114,31,1161.84,34.9,2,Monthly,Paid Social,Churn
+SYN0115,42,370.74,51.3,1,Monthly,Referral,Retained
+SYN0116,30,237.63,54.0,0,Monthly,Paid Social,Retained
+SYN0117,19,190.55,100.0,1,Monthly,Paid Social,Retained
+SYN0118,37,917.79,68.8,1,Annual,Paid Social,Retained
+SYN0119,35,927.92,35.9,6,Monthly,Partner,Retained
+SYN0120,24,333.72,60.6,0,Monthly,Paid Social,Churn
+SYN0121,65,578.29,72.1,1,Annual,Referral,Retained
+SYN0122,65,566.94,71.2,3,Monthly,Paid Social,Retained
+SYN0123,60,180.4,75.6,1,Prepaid,Partner,Retained
+SYN0124,60,172.23,43.2,1,Monthly,Referral,Retained
+SYN0125,30,172.42,57.3,1,Annual,Organic,Retained
+SYN0126,63,620.12,22.5,0,Prepaid,Paid Social,Retained
+SYN0127,25,270.35,52.6,2,Prepaid,Referral,Retained
+SYN0128,46,272.77,78.5,4,Monthly,Paid Social,Churn
+SYN0129,1,588.4,17.2,4,Annual,Referral,Churn
+SYN0130,70,267.91,71.6,1,Monthly,Organic,Retained
+SYN0131,49,397.19,78.5,2,Annual,Referral,Retained
+SYN0132,37,173.69,60.9,0,Annual,Organic,Retained
+SYN0133,58,351.38,100.0,3,Monthly,Partner,Retained
+SYN0134,13,295.31,86.3,1,Monthly,Referral,Churn
+SYN0135,26,255.59,75.3,0,Prepaid,Partner,Retained
+SYN0136,70,394.39,88.2,1,Monthly,Partner,Retained
+SYN0137,62,148.16,81.3,2,Monthly,Paid Social,Retained
+SYN0138,3,311.3,56.1,3,Annual,Partner,Retained
+SYN0139,5,161.28,50.8,0,Monthly,Paid Social,Churn
+SYN0140,49,286.26,67.7,3,Annual,Organic,Retained
+SYN0141,3,408.03,71.4,1,Annual,Partner,Retained
+SYN0142,45,215.95,63.0,5,Monthly,Paid Social,Retained
+SYN0143,24,551.37,71.4,1,Monthly,Referral,Retained
+SYN0144,22,294.96,54.6,1,Monthly,Organic,Churn
+SYN0145,70,673.3,48.7,1,Annual,Paid Social,Retained
+SYN0146,5,251.34,52.3,0,Monthly,Organic,Churn
+SYN0147,28,390.28,100.0,0,Monthly,Organic,Churn
+SYN0148,19,556.89,100.0,3,Monthly,Paid Social,Churn
+SYN0149,64,564.4,70.4,5,Prepaid,Paid Social,Retained
+SYN0150,51,231.58,79.1,0,Annual,Partner,Retained
+SYN0151,40,211.71,51.7,2,Prepaid,Partner,Retained
+SYN0152,58,368.59,81.3,3,Monthly,Organic,Retained
+SYN0153,67,277.95,60.2,1,Monthly,Referral,Retained
+SYN0154,22,489.84,30.3,10,Monthly,Organic,Churn
+SYN0155,46,315.01,81.1,1,Annual,Referral,Retained
+SYN0156,45,508.87,44.6,2,Monthly,Referral,Retained
+SYN0157,50,245.53,42.8,2,Monthly,Paid Social,Retained
+SYN0158,63,201.75,72.7,1,Prepaid,Organic,Retained
+SYN0159,12,580.91,57.0,3,Annual,Paid Social,Retained
+SYN0160,65,244.79,59.4,3,Annual,Paid Social,Retained
+SYN0161,3,135.91,49.9,4,Monthly,Paid Social,Churn
+SYN0162,8,156.67,72.2,4,Annual,Paid Social,Churn
+SYN0163,50,438.19,32.9,1,Annual,Organic,Retained
+SYN0164,8,289.27,68.5,2,Prepaid,Referral,Retained
+SYN0165,67,588.31,60.5,1,Annual,Organic,Retained
+SYN0166,15,318.2,19.7,1,Prepaid,Referral,Churn
+SYN0167,48,246.43,95.3,2,Monthly,Organic,Retained
+SYN0168,17,313.89,53.4,0,Monthly,Paid Social,Retained
+SYN0169,12,391.28,60.6,1,Annual,Paid Social,Retained
+SYN0170,59,253.17,36.0,2,Monthly,Organic,Retained
+SYN0171,61,334.23,66.0,1,Prepaid,Paid Social,Retained
+SYN0172,36,538.58,47.4,3,Monthly,Organic,Churn
+SYN0173,47,498.67,78.4,1,Prepaid,Paid Social,Retained
+SYN0174,37,150.72,55.9,2,Monthly,Organic,Churn
+SYN0175,50,336.08,72.4,5,Monthly,Paid Social,Retained
+SYN0176,46,165.99,50.7,1,Monthly,Paid Social,Retained
+SYN0177,47,264.75,88.2,3,Annual,Organic,Retained
+SYN0178,45,400.69,96.0,2,Annual,Organic,Retained
+SYN0179,21,375.34,49.3,4,Monthly,Organic,Retained
+SYN0180,17,248.32,68.0,2,Annual,Referral,Churn
+SYN0181,9,345.18,69.9,2,Prepaid,Organic,Retained
+SYN0182,5,370.7,100.0,3,Prepaid,Paid Social,Retained
+SYN0183,14,349.93,84.1,0,Annual,Partner,Retained
+SYN0184,66,647.92,35.5,2,Monthly,Referral,Retained
+SYN0185,27,644.23,67.0,4,Annual,Referral,Retained
+SYN0186,17,349.66,49.6,2,Annual,Partner,Retained
+SYN0187,31,166.16,50.4,1,Annual,Paid Social,Retained
+SYN0188,72,206.73,63.8,0,Monthly,Partner,Retained
+SYN0189,1,577.71,55.5,4,Monthly,Organic,Churn
+SYN0190,8,537.87,37.3,4,Monthly,Partner,Churn
+SYN0191,28,1071.74,52.6,4,Monthly,Paid Social,Retained
+SYN0192,65,620.53,100.0,2,Monthly,Partner,Retained
+SYN0193,45,175.07,62.6,3,Prepaid,Partner,Churn
+SYN0194,13,468.72,90.9,1,Monthly,Referral,Churn
+SYN0195,5,512.39,19.0,1,Monthly,Referral,Retained
+SYN0196,66,348.85,84.6,1,Monthly,Paid Social,Retained
+SYN0197,29,367.93,87.8,2,Monthly,Organic,Churn
+SYN0198,37,255.9,39.2,3,Annual,Partner,Retained
+SYN0199,56,471.97,14.4,1,Monthly,Referral,Retained
+SYN0200,52,337.94,57.0,2,Monthly,Organic,Retained
+SYN0201,35,394.45,66.7,3,Prepaid,Paid Social,Retained
+SYN0202,3,476.71,89.8,2,Monthly,Organic,Churn
+SYN0203,64,84.87,18.6,1,Monthly,Organic,Retained
+SYN0204,55,191.15,51.5,1,Prepaid,Partner,Retained
+SYN0205,69,281.58,17.0,0,Monthly,Referral,Retained
+SYN0206,60,416.31,56.8,4,Annual,Referral,Retained
+SYN0207,14,235.25,36.7,1,Monthly,Paid Social,Churn
+SYN0208,54,274.66,42.9,0,Prepaid,Organic,Retained
+SYN0209,47,75.81,89.5,3,Annual,Paid Social,Retained
+SYN0210,42,405.5,49.0,1,Annual,Paid Social,Retained
+SYN0211,46,644.65,64.7,2,Annual,Paid Social,Retained
+SYN0212,63,51.65,67.6,2,Prepaid,Referral,Retained
+SYN0213,42,222.04,75.8,0,Annual,Organic,Retained
+SYN0214,47,180.2,65.1,3,Monthly,Paid Social,Retained
+SYN0215,22,441.42,59.8,0,Monthly,Referral,Churn
+SYN0216,60,861.7,62.9,3,Prepaid,Paid Social,Retained
+SYN0217,50,753.69,38.2,1,Monthly,Paid Social,Retained
+SYN0218,64,242.99,81.3,3,Monthly,Paid Social,Retained
+SYN0219,18,329.05,80.2,2,Annual,Partner,Retained
+SYN0220,67,352.22,57.2,1,Monthly,Referral,Retained
+SYN0221,52,323.32,63.8,1,Annual,Organic,Retained
+SYN0222,6,1049.3,50.7,2,Annual,Partner,Churn
+SYN0223,12,602.79,91.7,2,Prepaid,Partner,Retained
+SYN0224,10,553.27,54.0,4,Annual,Referral,Retained
+SYN0225,47,783.37,65.0,1,Monthly,Paid Social,Retained
+SYN0226,33,131.92,77.1,3,Annual,Referral,Retained
+SYN0227,3,179.92,82.5,0,Monthly,Referral,Churn
+SYN0228,49,361.45,44.9,1,Prepaid,Organic,Retained
+SYN0229,63,220.26,44.6,1,Monthly,Partner,Retained
+SYN0230,48,325.58,24.7,2,Monthly,Partner,Retained
+SYN0231,56,186.6,64.9,3,Annual,Partner,Retained
+SYN0232,53,205.18,32.8,1,Annual,Referral,Retained
+SYN0233,56,256.47,86.2,2,Monthly,Partner,Retained
+SYN0234,37,683.74,97.0,0,Annual,Partner,Retained
+SYN0235,17,529.78,100.0,4,Monthly,Organic,Retained
+SYN0236,36,484.36,80.1,2,Monthly,Paid Social,Retained
+SYN0237,66,190.1,37.0,3,Monthly,Paid Social,Churn
+SYN0238,50,158.51,62.9,3,Annual,Organic,Retained
+SYN0239,71,130.1,59.0,2,Annual,Organic,Retained
+SYN0240,49,297.77,11.0,0,Annual,Paid Social,Retained
+SYN0241,21,426.77,74.3,4,Annual,Paid Social,Retained
+SYN0242,72,594.83,56.0,1,Monthly,Partner,Retained
+SYN0243,1,411.07,100.0,4,Prepaid,Organic,Churn
+SYN0244,23,555.08,62.8,2,Monthly,Organic,Retained
+SYN0245,60,256.76,66.8,1,Monthly,Paid Social,Retained
+SYN0246,8,501.28,56.5,1,Prepaid,Referral,Retained
+SYN0247,2,408.72,56.6,1,Monthly,Paid Social,Churn
+SYN0248,24,235.85,42.0,1,Monthly,Referral,Retained
+SYN0249,59,358.17,78.3,0,Monthly,Partner,Retained
+SYN0250,31,442.95,0.0,2,Annual,Partner,Retained
+SYN0251,21,205.37,65.1,3,Annual,Paid Social,Retained
+SYN0252,14,900.48,53.4,3,Annual,Referral,Retained
+SYN0253,30,559.25,25.9,1,Monthly,Organic,Churn
+SYN0254,49,527.15,29.0,1,Monthly,Referral,Retained
+SYN0255,18,411.75,48.9,3,Monthly,Paid Social,Retained
+SYN0256,68,562.33,80.2,5,Monthly,Referral,Retained
+SYN0257,26,123.85,31.6,1,Monthly,Organic,Churn
+SYN0258,67,91.37,100.0,0,Annual,Paid Social,Retained
+SYN0259,71,273.26,74.8,0,Monthly,Referral,Churn
+SYN0260,68,349.55,51.7,0,Monthly,Paid Social,Retained
+SYN0261,44,314.78,60.6,1,Monthly,Referral,Churn
+SYN0262,63,143.74,24.1,1,Monthly,Paid Social,Churn
+SYN0263,21,526.01,58.6,3,Monthly,Referral,Retained
+SYN0264,2,150.53,73.4,1,Annual,Partner,Retained
+SYN0265,49,439.13,59.2,3,Monthly,Paid Social,Retained
+SYN0266,54,496.64,68.4,2,Monthly,Referral,Retained
+SYN0267,11,471.17,66.1,0,Monthly,Organic,Retained
+SYN0268,40,253.16,56.6,3,Monthly,Paid Social,Retained
+SYN0269,12,247.19,55.0,3,Monthly,Referral,Retained
+SYN0270,50,457.6,75.3,3,Annual,Paid Social,Retained
+SYN0271,21,386.02,48.9,3,Monthly,Paid Social,Churn
+SYN0272,39,388.45,48.4,0,Annual,Paid Social,Churn
+SYN0273,10,568.37,48.9,0,Monthly,Paid Social,Retained
+SYN0274,37,404.29,60.5,0,Annual,Referral,Retained
+SYN0275,39,137.87,76.6,1,Prepaid,Referral,Retained
+SYN0276,43,387.56,96.0,3,Annual,Organic,Retained
+SYN0277,51,259.49,42.2,1,Annual,Organic,Retained
+SYN0278,43,417.63,46.5,1,Prepaid,Referral,Retained
+SYN0279,58,230.51,36.7,2,Monthly,Referral,Retained
+SYN0280,63,544.6,45.5,2,Monthly,Organic,Retained
+SYN0281,1,427.49,49.0,3,Monthly,Organic,Churn
+SYN0282,28,235.02,19.2,0,Annual,Paid Social,Churn
+SYN0283,61,196.34,55.3,4,Annual,Paid Social,Retained
+SYN0284,13,336.21,30.8,1,Annual,Organic,Retained
+SYN0285,66,380.75,88.9,2,Monthly,Organic,Retained
+SYN0286,53,189.27,36.7,3,Annual,Referral,Retained
+SYN0287,68,267.81,49.8,1,Monthly,Paid Social,Retained
+SYN0288,19,423.18,79.5,2,Monthly,Referral,Retained
+SYN0289,22,451.24,33.1,1,Monthly,Referral,Churn
+SYN0290,27,229.41,38.6,3,Annual,Paid Social,Retained
+SYN0291,62,490.35,51.7,0,Monthly,Paid Social,Retained
+SYN0292,8,420.94,60.1,6,Monthly,Paid Social,Churn
+SYN0293,67,233.24,91.4,0,Monthly,Partner,Retained
+SYN0294,25,807.57,53.0,0,Monthly,Referral,Retained
+SYN0295,62,138.0,76.1,3,Monthly,Paid Social,Retained
+SYN0296,46,290.6,51.0,1,Monthly,Partner,Retained
+SYN0297,1,294.32,90.8,1,Prepaid,Organic,Retained
+SYN0298,23,399.85,41.7,5,Monthly,Referral,Retained
+SYN0299,38,189.85,49.2,1,Prepaid,Referral,Retained
+SYN0300,54,128.55,100.0,2,Prepaid,Paid Social,Retained
+SYN0301,9,551.39,37.9,0,Monthly,Referral,Churn
+SYN0302,54,625.97,30.4,2,Monthly,Paid Social,Retained
+SYN0303,58,669.33,42.4,1,Prepaid,Paid Social,Retained
+SYN0304,56,351.88,76.7,2,Annual,Referral,Retained
+SYN0305,30,753.76,56.1,3,Monthly,Organic,Retained
+SYN0306,59,229.29,88.7,0,Monthly,Referral,Retained
+SYN0307,69,312.87,51.7,0,Monthly,Referral,Retained
+SYN0308,56,699.22,77.0,0,Annual,Partner,Retained
+SYN0309,57,493.92,98.4,1,Monthly,Paid Social,Retained
+SYN0310,7,67.61,56.2,2,Monthly,Organic,Churn
+SYN0311,24,84.91,81.6,0,Annual,Paid Social,Retained
+SYN0312,69,102.74,48.5,1,Monthly,Referral,Retained
+SYN0313,29,566.51,58.4,3,Monthly,Organic,Churn
+SYN0314,31,265.92,54.1,2,Monthly,Organic,Retained
+SYN0315,8,450.3,68.6,2,Annual,Paid Social,Churn
+SYN0316,67,884.44,63.6,1,Annual,Organic,Retained
+SYN0317,64,165.38,85.7,3,Monthly,Paid Social,Retained
+SYN0318,37,456.19,81.4,1,Monthly,Referral,Retained
+SYN0319,54,326.01,15.8,5,Monthly,Partner,Churn
+SYN0320,38,335.04,56.8,1,Monthly,Partner,Retained
