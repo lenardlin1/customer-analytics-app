@@ -1,4 +1,6 @@
 from __future__ import annotations
+import sys, os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "src"))
 import hashlib, io, json, os
 from datetime import datetime
 from pathlib import Path
