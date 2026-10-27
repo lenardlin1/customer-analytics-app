@@ -163,6 +163,7 @@ elif page == "Capability Comparison":
 elif page == "Gap Assessment":
     st.title("Gap Assessment")
     st.write("Use documented feature evidence plus what your team knows about its current plan, configuration, data and workflow. Prioritization is a transparent stakeholder-scored heuristic, not a measured financial estimate.")
+    options=[f[0] for f in FEATURES]
     with st.form("gap_form"):
         p=st.selectbox("Current CRM platform",platform_names)
         feat=st.selectbox("Closest capability to the business requirement",options,format_func=lambda value:feature_lookup[value][1])
